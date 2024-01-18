@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    font-family: 'Pretendard', serif;
+    word-break: keep-all;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3d3d3d;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 100px;
+}
+header .logo {
+    float: left;
+    padding: 13px 0 0 0;
+}
+header .gnb {
+    float: right;
+}
+header .gnb ul{
+    display:flex;
+}
+header .gnb ul li a{
+    display: block;
+    font-size: 21px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding: 37px 28px 37px 28px;
+}
+header .gnb ul li a:hover{
+    color: #254aa5
+}
+
+.visual{
+    height: 800px;
+    background: url(../images/visual-bg.png) center center no-repeat;
+    text-align: center;
+    color:#fff;
+}
+.visual h2 {
+    padding-top: 198px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+.visual p {
+    margin-top: 8px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.biz h2 {
+    font-size: 20px;
+    color:#1d1d1d;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.biz h2 span{
+    font-size: 40px;
+    font-weight: 700;
+}
+.biz ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.biz ul li h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 25px 0 10px 0;
+    color: #1d1d1d;
+}
+.biz ul li p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #1d1d1d;
+}
+.biz ul li a {
+    border: 1px solid #999999;
+    padding: 13px 72px 13px 72px;
+    display: inline-block;
+}
+.biz ul li a:hover {
+    border: 1px solid #254aa5;
+    color: #254aa5;
+}
+
+.brand {
+    height: 800px;
+    background: url(../images/bizbackground.png) center center no-repeat;
+    margin: 145px 0 0 0;
+    color: #fff;
+}
+.brand h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    padding: 140px 0 0 0;
+}
+.brand p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.8);
+    margin: 35px 0 35px 0;
+}
+.brand p.sub_tit{
+    font-size: 20px;
+}
+.brand a {
+    border: 1px solid rgba(255,255,255,0.6);
+    padding: 13px 20px 13px 20px;
+    display: inline-block;
+}
+.brand a:hover {
+    border: 1px solid #254aa5;
+    color: #254aa5;
+}
+
+footer {
+    padding: 55px 0 65px 0;
+    background-color: #1d1d1d;
+    color: rgba(255,255,255,0.8);
+}
+footer .f_nav {
+    display: flex;
+    margin-bottom: 15px;
+}
+footer .f_nav li{
+    margin-right: 20px;
+}
+footer .f_nav li.privacy{
+    font-weight: 800;
+}
+footer .copyright{
+    color: rgba(255,255,255,0.6);
+}
