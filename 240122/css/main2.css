@@ -46,6 +46,9 @@ a { /* a태그는 파란색에 underline이 기본적으로 생성됨 */
     color: inherit; 
     /* 색상은 상속받아 - 파란색 말고 누군가가 상속해준 스타일을 적용  */
 }
+address, em {
+    font-style: normal;
+}
 
 .header {
     height: 100px;
@@ -93,50 +96,172 @@ a { /* a태그는 파란색에 underline이 기본적으로 생성됨 */
     line-height: 1.2;
 }
 
-/* .biz .art와 .biz .edu 둘다에게 동일스타일 스타일을 적용할때 사용 - 다중선택자 */
-.biz .art, .biz .edu {
-    display: flex; /* inner와 img가 좌우로 배치 */
+.biz {
+    margin: 121px 0 121px 0;
+}
+.biz .art,
+.biz .edu {
+    display: flex;
 }
 .biz .edu {
-    justify-content: flex-end; /* 내부 콘텐츠를 감싸는 영역 오른쪽에 붙이기 */
-    text-align: right; /* 이우열장학재단은 모든 콘텐츠가 오른쪽 정렬 */
+    justify-content: flex-end;/* 오른쪽 정렬 */
+    margin: 60px 0 0 0;
 }
 .biz .art .inner {
-    margin: 0 0 0 100px;
+    margin: 70px 0 0 100px;
 }
 .biz .edu .inner {
-    margin: 0 100px 0 0;
-    width: 430px;
+    margin: 70px 100px 0 0;
+    width: 420px; 
+    /* 긴문장을 넓이를 제한해서 줄바꿈주기 */
+    text-align: right;
 }
-/* 아트센터와 이구열 장학재단 h2를 한꺼번에 스타일 줄 수 있음. 
-    어차피 스타일이 동일하기 때문에 각자를 감싸는 영역 art edu를 빼고 호출 
-    .inner도 선택자로 잘 안부르는 편... */
-.biz h2 {
+.biz .art h2,
+.biz .edu h2 {
     color: #1D1D1D;
     font-size: 40px;
     font-weight: 900;
-    margin: 72px 0 0 0;
 }
-.biz .sub_tit {
+.biz .art .sub_tit,
+.biz .edu .sub_tit {
+    color: #1D1D1D;
     font-size: 20px;
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
 }
-.biz .btn_wrap {
+.biz .art .btn_wrap,
+.biz .edu .btn_wrap {
+    display: flex;
     margin: 10px 0 0 0;
 }
-.biz .btn_wrap a {
-    border: 1px solid #999999; /* rgba(0,0,0,0.5) */
-    padding: 9px 22px 9px 22px; /* border 안쪽 여백  */
-    display: inline-block; 
-    /* padding값을 적용시키기 위해 display:block;을 주지만 
-    가로 100%로 넓어져서 display:inline-block으로 변경 
-    display:inline-block은 내가 주지 않은 여백이 좌우에 들어감.
-    그 여백을 감안하고 좌우여백을 주면됨. (글자의 행간 감안하고 여백주듯이)*/
-    
+.biz .edu .btn_wrap {
+    justify-content: flex-end; /* 오른쪽정렬 */
+}
+.biz .art .btn_wrap a,
+.biz .edu .btn_wrap a {
+    border: 1px solid #999999;
+    padding: 9px 22px 9px 22px;
+    display: block;
 }
 .biz .art .btn_wrap a { /* 아트센터의 버튼은 오른쪽 여백 */
     margin: 0 5px 0 0;
 }
 .biz .edu .btn_wrap a { /* 이우열의 버튼은 왼쪽 여백 */
     margin: 0 0 0 5px;
+}
+
+.bbs {
+    background: url(../images/bbs_bg.png) center top no-repeat;
+    color: #fff;
+}
+.bbs .notice {
+    display: flex;
+    justify-content: space-between;
+}
+.bbs .notice .tit {
+    margin: 116px 0 0 0;
+}
+.bbs .notice .tit h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.bbs .notice .tit p {
+    color: rgba(255,255,255,0.8);
+    margin: 8px 0 15px 0;
+}
+.bbs .notice .tit a {
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 8px 20px 8px 20px;
+    display: inline-block;
+}
+.bbs .notice ul {
+    margin: 100px 0 0 0;
+    width: 735px;
+}
+.bbs .notice ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+.bbs .notice ul li:last-child {
+    border-bottom: 0;
+}
+.bbs .notice ul li a {
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    font-size: 20px;
+}
+.bbs .notice ul li a strong{
+    font-weight: inherit;
+}
+.bbs .notice ul li a span {
+    color: rgba(255,255,255,0.8);
+}
+.bbs .video {
+    margin: 100px 0 0 0;
+}
+.bbs .video h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 0 16px 0;
+}
+.bbs .video ul {
+    display: flex;
+    justify-content: space-between;
+}
+.bbs .video ul li{
+    width: 408px;
+}
+.bbs .video ul li a strong {
+    color: #1D1D1D;
+    font-weight: inherit;
+    margin: 25px 0 0 0;
+    font-size: 20px;
+    display: block;
+}
+.bss .video ul li a img {
+    border: 5px solid #01326C;
+    box-shadow: 3px -3px 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #2d2d2d;
+    color: rgba(255,255,255,0.8);
+    margin: 120px 0 0 0;
+    padding: 57px 0 69px 0;
+}
+.footer .f_nav {
+    display: flex;
+}
+.footer .f_nav li {
+    padding: 0 30px 0 0;
+    /* margin: 0 30px 0 0; */
+    /*border-left: 1px solid rgba(255,255,255,0.4); */
+    position: relative;
+}
+.footer .f_nav li::after {
+    position: absolute;
+    right: 14px;
+    top: 4px;
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: rgba(255,255,255,0.4);
+    content: "";
+}
+.footer .f_nav li:last-child::after {
+    display: none;
+}
+.footer .f_nav li.privacy {
+    font-weight: 900;
+}
+.footer .f_info {
+    display: flex;
+    margin: 25px 0 18px 0;
+}
+.footer .f_info span,
+.footer .f_info address {
+    margin: 0 26px 0 0;
+}
+.footer .copyright {
+    color: rgba(255,255,255,0.8);
 }
