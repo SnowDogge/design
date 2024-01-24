@@ -1,0 +1,83 @@
+@font-face {font-family: 'Pretendard';font-weight: 400;font-display: swap;src: local('Pretendard Regular'), url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 700;font-display: swap;src: local('Pretendard Black'), url(../fonts/Pretendard-bold.woff2) format('woff2'), url(../fonts/Pretendard-bold.woff) format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 900;font-display: swap;src: local('Pretendard Black'), url(../fonts/Pretendard-Black.woff2) format('woff2'), url(../fonts/Pretendard-Black.woff) format('woff');}
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 1.5;
+    word-break: keep-all;
+    letter-spacing: -0.05em;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+#wrap {
+    min-width: 1280px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol, li { 
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+address, em {
+    font-style: normal;
+}
+
+.visual_t h2 {
+    margin: 60px 0 25px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.visual_t span {
+    color: #07B53B;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    display:inline-block;
+}
+.visual_t ul{
+    display: flex;
+}
+.visual_t ul li{
+    margin: 20px 0 40px 0;
+}
+.visual_t ul li a{
+    padding: 9px 44px 9px 44px;
+    border: 1px solid #666;
+    display: block;
+}
+.visual_t ul li .btn1{
+    margin-left: 5px;
+    border: 1px solid #07B53B;
+    color: #07B53B;
+}
+
+.visual_b {
+    height: 598px;
+    margin: 70px 0 0 0;
+    background: url(../images/bot_bg.png)  center center no-repeat;
+    text-align: center;
+    color:#fff;
+}
+.visual_b h2 {
+    padding: 60px 0 25px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.visual_b a {
+    border: 1px solid #fff;
+    padding: 8px 40px 8px 40px;
+    margin: 25px 0 40px 0;
+    display: inline-block;
+}
