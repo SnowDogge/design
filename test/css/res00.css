@@ -1,0 +1,181 @@
+/* 웹폰트 선언 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Pretendard Regular'), url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'), url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+html, body {
+    font-family: 'Pretendard', sans-serif; /* 서체 */
+    font-size: 15px; /* 크기 */
+    color: #3d3d3d; /* 글자색상 */
+    font-weight: 400; /* 글자의 두께 */
+    line-height: 1.4; /* auto */
+    word-break: keep-all; /* 단어를 묶어서 줄바꿈 */
+}
+.wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
+    width: 1280px; /* 홈페이지 넓이 */
+    margin: 0 auto;  /* 가운데 정렬 */
+}
+#wrap { /* id="wrap"에 적용되는 스타일 */
+    min-width: 1280px;
+    /* PC형에서 wrapper사이즈보다 브라우저 넓이가 작을때
+       가로스크롤바가 생성되는데 오른쪽에 background가 
+       짤리는 현상이 생김.  
+       가로스크롤바가 생성되었을때도 홈페이지를 정상적으로 
+       서비스 하기 위해서 최소 넓이를 입력 */
+}
+@media screen and (max-width:640px){
+	html, body {
+        font-size: 13px; /* 크기 */
+    }
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+    #wrap {
+        min-width: 320px;
+    }
+}
+/* 태그초기화 - 태그의 기본스타일 제거 */
+* {
+    padding: 0; /* 모든 태그의 여백삭제 */
+    margin: 0;
+    box-sizing: border-box;
+    /* padding하고 border는 넓이를 늘리는 요소인데 넓이를 늘리지 않도록 하는 속성 */
+}
+ul, ol, li { 
+    list-style: none; /* ul li앞에 동그라미 삭제 */
+}
+a { /* a태그는 파란색에 underline이 기본적으로 생성됨 */
+    text-decoration: none; /* underline 제거 */
+    color: inherit; 
+    /* 색상은 상속받아 - 파란색 말고 누군가가 상속해준 스타일을 적용  */
+}
+address, em {
+    /* em태그와 address태그는 기본적으로 글자가 기울어짐 
+       디자인상 기울어짐을 사용하기 위해서 쓰지 않음
+       최근 기울어짐 디자인을 하지 않음 
+       그래서 태그에 있는 기본 기울어짐을 초기화 함 */
+    font-style: normal;
+}
+/* 글자를 두껍게하고 글자크기를 조정하는 태그 - 
+   body가 선언한 속성대로 적용될 수 있도록 초기화 
+   브라우저가 기본적으로 적용한 스타일 적용되지 않도록 막기 */
+h1, h2, h3, h4, h5, h6, strong {
+    font-size: inherit;
+    font-weight: inherit;
+}
+button {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+.notice {
+    margin: 80px 0 0 0;
+}
+.notice h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #666;
+    margin-bottom: 23px;
+}
+.notice h2 strong {
+    color: #1d1d1d;
+}
+.notice ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+.notice ul li {
+    width: 299px;
+}
+.notice ul li a {
+    display: block;
+}
+.notice ul li a strong {
+    display: block;
+    font-size: 20px;
+    color: #1d1d1d;
+    margin: 12px 0;
+}
+.notice ul li a span {
+    display: block;
+    color: #666;
+}
+.notice .notice_wrap {
+    position: relative;
+}
+.notice .more {
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+.notice .more a {
+    display: block;
+    border: 1px solid #999;
+    border-radius: 30px;
+    line-height: 42px;
+    padding: 0 25px;
+}
+.notice .more a:hover {
+    background-color: #999;
+    color: #FFF;
+}
+@media screen and (max-width:640px){
+    .notice {
+        margin: 80px 0 0 0;
+    }
+    .notice h2 {
+        font-size: 20px;
+        margin-bottom: 21px;
+    }
+    .notice ul {
+        display: block;
+    
+    }
+    .notice ul li {
+        width: auto;
+    }
+    .notice ul li a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .notice ul li img {
+        width: 96px;
+    }
+    .notice ul li a .inner{
+        width: calc(100% - 112px);
+    }
+    .notice ul li a strong {
+        font-size: 13px;
+        color: #1d1d1d;
+        margin: 0 0 8px 0;
+        line-height: 1.2;
+        height: 2.4em;
+        overflow: hidden;
+    }
+    .notice .more {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .notice .more a {
+        display: inline-block;
+        line-height: 42px;
+        padding: 0 25px;
+    }
+}
