@@ -170,7 +170,7 @@ button {
         position: relative;
         right: auto;
         top: auto;
-        margin-bottom: 100px;
+        margin: 20px 0 0 0;
         text-align: center;
     }
     .notice .more a {
@@ -257,22 +257,26 @@ button {
     .news ul li a strong {
         display: block;
         font-size: 13px;
-        margin: 8px 0;
+        margin: 5px 0;
+        line-height: 1.2;
+        height: 2.4em;
+        overflow: hidden;
     }
     .news .notice_wrap {
         position: relative;
     }
     .news .more {
-        position: absolute;
-        right: 0;
-        top: 25px;
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 20px 0 100px 0;
+        text-align: center;
     }
     .news .more a {
-        display: block;
-        border: 1px solid #999;
-        border-radius: 30px;
-        line-height: 42px;
-        padding: 0 25px;
+        border-radius: 20px;
+        line-height: 37px;
+        padding: 0 27px;
+        display: inline-block;
     }
     .news .more a:hover {
         background-color: #999;
