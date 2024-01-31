@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Pretendard Regular'), url(../fonts/Pretendard-Regular.woff2) format('woff2'), url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'), url(../fonts/Pretendard-Bold.woff2) format('woff2'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+html, body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 1.4;
+    word-break: keep-all;
+    letter-spacing: -0.05em;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+#wrap {
+    min-width: 1280px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol, li { 
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+address, em {
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, strong {
+    font-size: inherit;
+    font-weight: inherit;
+}
+button {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+.top h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 80px 0 20px 0;
+    text-align: center;
+}
+.top ul {
+    display: flex;
+    justify-content: space-between;
+}
+.top ul li h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 12px 0;
+}
+.top ul li p {
+    width: 290px;
+}
+
+.bot {
+    background-color: #F4F4F4;
+    margin: 80px 0 0 0;
+    height: 762px;
+}
+.bot h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 80px 0 20px 0;
+    text-align: center;
+}
+.bot ul {
+    display: flex;
+    justify-content: space-between;
+}
+.bot ul li {
+    color: #fff;
+    text-align: center;
+}
+.bot ul li.tech00{
+    background: url(../images/tech01.png) center center no-repeat;
+}
+.bot ul li.tech01{
+    background: url(../images/tech02.png) center center no-repeat;
+}
+.bot ul li a {
+    display: block;
+    width: 620px;
+    height: 514px;
+    padding: 196px 0 0 0;
+}
+.bot ul li a h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
