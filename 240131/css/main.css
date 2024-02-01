@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 html, body {
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'Noto sans KR', sans-serif;
     font-size: 15px;
     color: #3d3d3d;
     font-weight: 400;
@@ -17,4 +17,133 @@ html, body {
 }
 #wrap {
     min-width: 1280px;
+}
+@media screen and (max-width:640px){
+    html, body {
+        font-size: 12px;
+    }
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+    #wrap {
+        min-width: auto;
+    }
+}
+
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    left: 0;
+    top: 0;
+}
+.header .logo {
+    float: left;
+    margin-top: 13px;
+}
+.header .logo a {
+    width: 199px;
+    height: 66px;
+    display: block;
+    background: url(../images/logow.svg) no-repeat center center / contain;
+    font-size: 0;
+    line-height: 0;
+}
+.header .inner {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.header .gnb .gnbopen{
+    display: none;
+}
+.header .gnb ul {
+    display: flex;
+}
+.header .gnb ul li a {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 34px 25px;
+    display: block;
+}
+.header .login {
+    width: 31px;
+    height: 31px;
+    background: url(../images/icon_00w.svg) no-repeat center center;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 10px 0 35px;
+}
+.header .lang {
+    width: 31px;
+    height: 31px;
+    background: url(../images/icon_01w.svg) no-repeat center center;
+    font-size: 0;
+    line-height: 0;
+}
+@media screen and (max-width:640px){
+    .header {
+        height: 50px;
+    }
+    .header .logo {
+        margin-top: 7px;
+    }
+    .header .logo a {
+        width: 101px;
+        height: 33px;
+    }
+    .header .gnb ul {
+        display: none;
+    }
+    .header .gnb .gnbopen{
+        display: block;
+        background: url(../images/gnb_openW.svg) no-repeat center center;
+        font-size: 0;
+        line-height: 0;
+        width: 22px;
+        height: 22px;
+        margin: 11px 0 15px 0;
+    }
+    .header .login {
+        display: none;
+    }
+    .header .lang {
+        display: none;
+    }
+}
+
+.visual {
+    background: url(../images/visual_bg.png) no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+}
+.visual .inner {
+    display: flex;
+    height: 100vh;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
+.visual h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: -196px;
+    margin-bottom: 22px;
+}
+@media screen and (max-width:640px){
+    .visual .inner {
+        height: 225px;
+        min-height: auto;
+    }
+    .visual h2 {
+        font-size: 20px;
+        padding-top: 39px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
 }
