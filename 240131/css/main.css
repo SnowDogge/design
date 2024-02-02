@@ -20,7 +20,7 @@ html, body {
 }
 @media screen and (max-width:640px){
     html, body {
-        font-size: 12px;
+        font-size: 13px;
     }
     .wrapper {
         width: auto;
@@ -32,7 +32,7 @@ html, body {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     width: 100%;
     height: 100px;
@@ -85,6 +85,22 @@ html, body {
     font-size: 0;
     line-height: 0;
 }
+
+.header.fixed {
+    border-bottom: 0;
+    background-color: #fff;
+    color: #000;
+}
+.header.fixed .logo a {
+    background: url(../images/logo.svg) no-repeat center center / contain;
+}
+.header.fixed .login {
+    background: url(../images/icon_00.svg) no-repeat center center;
+}
+.header.fixed .lang {
+    background: url(../images/icon_01.svg) no-repeat center center;
+}
+
 @media screen and (max-width:640px){
     .header {
         height: 50px;
@@ -106,13 +122,25 @@ html, body {
         line-height: 0;
         width: 22px;
         height: 22px;
-        margin: 11px 0 15px 0;
+        margin: 14px 0 14px 0;
     }
     .header .login {
         display: none;
     }
     .header .lang {
         display: none;
+    }
+
+    .header.fixed {
+        border-bottom: 0;
+        background-color: #fff;
+        color: #000;
+    }
+    .header.fixed .logo a {
+        background: url(../images/logo.svg) no-repeat center center / contain;
+    }
+    .header.fixed .gnb .gnbopen{
+        background: url(../images/gnb_open.svg) no-repeat center center;
     }
 }
 
@@ -146,4 +174,92 @@ html, body {
         margin-top: 0;
         margin-bottom: 5px;
     }
+}
+
+.service {
+    background-color: #F7F7F7;
+    padding: 76px 0 64px 0;
+}
+.service h2 {
+    display: none;
+}
+.service ul {
+    display: flex;
+}
+.service ul li {
+    width: 16.66%;
+    text-align: center;
+}
+.service ul li a {
+    padding-top: 56px;
+    display: inline-block;
+    position: relative;
+}
+.service ul li a::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 26px);
+    top: 0;
+    width: 52px;
+    height: 49px;
+}
+.service ul li.service0 a::before {
+    background: url(../images/service_icon0.svg) no-repeat center center;
+}
+.service ul li.service1 a::before {
+    background: url(../images/service_icon1.svg) no-repeat center center;
+}
+.service ul li.service2 a::before {
+    background: url(../images/service_icon2.svg) no-repeat center center;
+}
+.service ul li.service3 a::before {
+    background: url(../images/service_icon3.svg) no-repeat center center;
+}
+.service ul li.service4 a::before {
+    background: url(../images/service_icon4.svg) no-repeat center center;
+}
+.service ul li.service5 a::before {
+    background: url(../images/service_icon5.svg) no-repeat center center;
+}
+@media screen and (max-width:640px){
+    .service {
+        background-color: #F7F7F7;
+        padding: 30px 0 10px 0;
+    }
+    .service ul {
+        flex-wrap: wrap;
+    }
+    .service ul li {
+        width: 33.33%;
+        margin-bottom: 18px;
+    }
+    .service ul li a {
+        padding-top: 42px;
+    }
+    .service ul li a::before {
+        left: calc(50% - 20px);
+        width: 39px;
+        height: 36px;
+    }
+    .service ul li.service0 a::before {
+        background-size: 37px auto;
+    }
+    .service ul li.service1 a::before {
+        background-size: 37px auto;
+    }
+    .service ul li.service2 a::before {
+        background-size: 37px auto;
+    }
+    .service ul li.service3 a::before {
+        background-size: 34px auto;
+    }
+    .service ul li.service4 a::before {
+        background-size: 37px auto;
+    }
+    .service ul li.service5 a::before {
+        background-size: 37px auto;
+    }
+}
+.footer {
+    height: 500px;
 }
