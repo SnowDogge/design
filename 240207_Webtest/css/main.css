@@ -95,6 +95,7 @@ html, body {
 .header .gnb ul.depth2 > li > a {
     display: block;
     line-height: 35px;
+    font-size: 15px;
 }
 .header .gnb ul.depth2 > li > a:hover {
     color: #009EF3;
@@ -133,4 +134,119 @@ html, body {
 .visual {
     height: 1000px;
     background: url(../images/visual_bg.png) no-repeat center center / cover;
+}
+
+@media screen and (max-width:640px){
+    .visual {
+        height: 320px;
+    }  
+}
+
+@media screen and (max-width:640px){
+    .header {
+        height: 50px;
+    }
+    .header .logo {
+        margin-top: 7px;
+    }
+    .header .logo a {
+        width: 101px;
+        height: 33px;
+    }
+    .header .gnb .gnb_open {
+        display: block;
+    }
+    .header .gnb .gnb_open,
+    .header .gnb .gnb_close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 50px;
+    }
+    .header .gnb .gnb_open i,
+    .header .gnb .gnb_close i {
+        font-size: 30px;
+    }
+    .header .gnb .gnb_open span,
+    .header .gnb .gnb_close span {
+        display: none;
+    }
+    .header .gnb ul.depth1 {
+        display: none;
+    }
+    .header.menu_open .gnb .gnb_open {
+        display: none;
+    }
+    .header.menu_open .gnb .gnb_close i {
+        color: #1d1d1d;
+    }
+    .header.menu_open .gnb .gnb_close {
+        background-color: #fff;
+        display: block;
+    }
+    .header.menu_open .gnb ul.depth1 {
+        overflow-y: scroll;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        padding: 50px 20px 0 20px;
+        color: #1d1d1d;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+    }
+    .header .gnb ul.depth1 > li {
+        border-bottom: 1px solid #ededed;
+        width: auto;
+        text-align: left;
+    }
+    .header .gnb ul.depth1 > li:first-child {
+        border-top: 1px solid #ededed;
+    }
+    .header .gnb ul.depth1 > li > a {
+        position: relative;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .header .gnb ul.depth1 > li > a::before {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' fill='%233d3d3d' viewBox='0 -960 960 960' width='24'%3E%3Cpath d='M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        content: "";
+    }
+    .header .gnb ul.depth1 > li.sub_open > a::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' fill='%233d3d3d' viewBox='0 -960 960 960' width='24'%3E%3Cpath d='m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z'/%3E%3C/svg%3E");
+    }
+    .header .gnb ul.depth2 {
+        background-color: #f7f7f7;
+        padding: 10px 0 10px 18px;
+        margin-top: 0;
+    }
+    .header .gnb .sub_open ul.depth2 {
+        display: block;
+    }
+    .header .gnb ul.depth2 > li > a {
+        line-height: 35px;
+        font-size: 15px;
+    }
+    .header .gnb ul.depth1 > li:hover > a {
+        color: inherit;
+    }
+    .header .gnb ul.depth1 > li:hover > a::after {
+        display: none;
+    }
+}
+
+.test {
+    font-size: 100px;
+    color: #666;
 }
