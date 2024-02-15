@@ -26,6 +26,15 @@
     font-style:normal; 
 }
 
+*::selection {
+    background-color: #7A563C;
+    color: #fff;
+}
+*::-moz-selection {
+    background-color: #7A563C;
+    color: #fff;
+}
+
 html, body {
     font-family: 'ey1945', serif; /* 서체 serif 명조 sans-serif 고딕 */
     font-size: 15px; /* 크기 */
@@ -522,4 +531,46 @@ html, body {
     .book .more a::after {
         display:none;
     }
+}
+
+.interview {
+    background-color: #F5F5F5;
+    margin-top: 135px;
+}
+.interview .tit {
+    padding-top: 111px;
+    text-align: center;
+}
+.interview .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.interview .list {
+    margin-top: 77px;
+}
+.interview .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.interview .list ul li {
+    width: 408px;
+}
+.interview .list ul li:nth-child(2) {
+    margin-top: 55px;
+}
+.interview .list ul li a {
+    display: block;
+}
+.interview .list ul li a .photo {
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+.interview .list ul li:nth-child(2) a .photo {
+    border-radius: 0 70px 0 70px; 
+}
+.interview .list ul li a .photo img {
+    filter: grayscale(100%);
 }
