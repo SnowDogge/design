@@ -955,15 +955,16 @@ html, body {
     position: relative;
 }
 .footer .footer_txt {
-    font: 30px;
+    font-size: 30px;
 }
-.footer .footer_info {
+.footer .footer_txt strong {
     font-weight: 700;
 }
 .footer .footer_info strong {
     display: block;
     font-size: 20px;
     font-weight: 700;
+    margin-top: 11px;
 }
 .footer .footer_info span + strong {
     margin-top: 57px;
@@ -971,11 +972,56 @@ html, body {
 .footer .footer_info span {
     display: block;
 }
+.footer .footer_info span a {
+    margin-right: 10px;
+}
 .footer .copyright {
     position: absolute;
     left: 0;
     bottom: 0;
-
+}
+.footer .copyright img {
+    width: 279px;
+}
+.footer .copyright span {
+    display: block;
+    margin-top: 5px;
+    color: rgba(255,255,255,0.8);
+    font-size: 12px;
+}
+@media screen and (max-width:640px){
+    .footer {
+        padding: 54px 0 60px 0 ;
+    }
+    .footer .inner {
+        display: block;
+    }
+    .footer .footer_txt {
+        font-size: 20px;
+        margin-bottom: 49px;
+    }
+    .footer .footer_info strong {
+        font-size: 15px;
+    }
+    .footer .footer_info span + strong {
+        margin-top: 38px;
+    }
+    .footer .footer_info span {
+        margin-top: 5px;
+    }
+    .footer .footer_info span a {
+        margin-right: 10px;
+    }
+    .footer .copyright {
+        position: relative;
+        margin-bottom: 64px;
+        left: auto;
+        bottom: auto;
+    
+    }
+    .footer .copyright img {
+        width: 279px;
+    }
 }
 
 @keyframes animate_ex1 {
