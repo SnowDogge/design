@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    let device_staus;
     var scrolling;
     scroll_chk();
 
@@ -43,6 +44,19 @@ $(document).ready(function(){
         },
 
     });
+    $(window).resize(function(){
+        webresize()
+    })
+
+    $('.header .gnb').on('mouseenter focusin', function() {
+        $('header').addClass('menu_over')
+    })
+    $('.header .tnb .login').on('mouseenter focusin', function() {
+        $('header').removeClass('menu_over')
+    })
+    $('.header').on('mouseleave', function() {
+        $('header').removeClass('menu_over')
+    })
 
     $('.interview .list ul li').on('mouseenter', function(){
         $('.interview .list ul li').removeClass('active');
@@ -63,16 +77,16 @@ $(document).ready(function(){
     $(window).scroll(function(){
         scroll_chk();
     });
+
+    $('.header .gnb .gnb_open').on('click', function (){
+        $('.header').addClass('menu_open')
+    })
+    $('.header .gnb .gnb_close').on('click', function (){
+        $('.header').removeClass('menu_open')
+    })
+
+    $('.header .gnb ul.depth1 > li > a').on('click', function (e){
+        e.preventDefault();
+        $(this).parent().togleClass('sub_open')
+    })
 })
-
-
-
-/* $(window).resize(function(){
-        webresize()
-    })
-    $('.header').on('mouseenter focusin', function() {
-        $('header').addClass('menu_over')
-    })
-    $('.header').on('mouseleave', function() {
-        $('header').removeClass('menu_over')
-    }) */
