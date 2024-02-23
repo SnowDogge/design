@@ -521,6 +521,10 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
+}
+.lost .list > ul > li .detail ul li a:hover .photo img {
+    transform: scale3d(1.2,1.2,1);
 }
 .lost .list > ul > li .detail ul li a h3 {
     font-size: 20px;
@@ -658,4 +662,272 @@ html, body {
         margin-top: 50px;
         padding: 8px 50px 6px 20px;
     }
+    .lost .list > ul > li .detail .more a::after {
+        position: absolute;
+        top: 9px;
+        width: 11px;
+        height: 11px;
+    }
+}
+
+.msg {
+    margin: 105px 0;
+}
+.msg h2 {
+    display: none;
+}
+.msg p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 700;
+}
+.msg p .msg1 {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 1em;
+}
+.msg span {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: #666
+}
+.msg p .msg1::before {
+    position: absolute;
+    background: url(../images/msg.png) no-repeat center center / contain;
+    top: -0.5em;
+    left: 5%;
+    width: 90%;
+    height: 2em;
+    content: "";
+}
+@media screen and (max-width:1320px) {
+    .msg p {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .msg p {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .msg p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .msg p {
+        font-size: 20px;
+    }
+}
+
+.adopt {
+    background-color: #0084A4;
+    color: #fff;
+    padding: 95px 0 280px 0;
+    position: relative;
+}
+.adopt h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 55px 0;
+}
+.adopt .list {
+    width: calc(100% + 640px);
+    margin-left: -320px;
+}
+.adopt .swiper ul li {
+    width: 320px;
+}
+.adopt .swiper ul li a {
+    display: block;
+}
+.adopt .swiper ul li a .photo {
+    display: block;
+    overflow: hidden;
+    border-radius: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.adopt .swiper ul li a .photo img {
+    width: 100%;
+}
+.adopt .swiper ul li a strong {
+    position: absolute;
+    width: 51px;
+    line-height: 51px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #0C3B57;
+    bottom: 35px;
+    left: 10%;
+
+}
+.adopt .swiper ul li a strong.category01 {
+    background-color: #0C3B57;
+}
+.adopt .swiper ul li a strong.category02 {
+    background-color: #FFBB54;
+}
+.adopt .swiper ul li a .txt {
+    display: block;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+.adopt .ctrl_btn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adopt .ctrl_btn button {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    line-height: 0;
+    font-size: 0;
+    margin: 0 5px 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.adopt .ctrl_btn button.prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.892 15.778'%3E%3Cpath id='chevron_right_FILL0_wght300_GRAD0_opsz24' d='M352.567-685.877l-6.015-6.015a1.07,1.07,0,0,1-.314-.771,1.044,1.044,0,0,1,.314-.785,1.059,1.059,0,0,1,.778-.321,1.06,1.06,0,0,1,.778.321l6.637,6.637a1.224,1.224,0,0,1,.292.437,1.419,1.419,0,0,1,.085.5,1.42,1.42,0,0,1-.085.5,1.224,1.224,0,0,1-.292.437l-6.637,6.637a1.071,1.071,0,0,1-.771.314,1.044,1.044,0,0,1-.785-.314,1.059,1.059,0,0,1-.321-.778,1.059,1.059,0,0,1,.321-.778Z' transform='translate(355.123 -677.991) rotate(180)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: 9px auto;
+}
+.adopt .ctrl_btn button.next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.892 15.778'%3E%3Cpath id='chevron_right_FILL0_wght300_GRAD0_opsz24' d='M352.567-685.877l-6.015-6.015a1.07,1.07,0,0,1-.314-.771,1.044,1.044,0,0,1,.314-.785,1.059,1.059,0,0,1,.778-.321,1.06,1.06,0,0,1,.778.321l6.637,6.637a1.224,1.224,0,0,1,.292.437,1.419,1.419,0,0,1,.085.5,1.42,1.42,0,0,1-.085.5,1.224,1.224,0,0,1-.292.437l-6.637,6.637a1.071,1.071,0,0,1-.771.314,1.044,1.044,0,0,1-.785-.314,1.059,1.059,0,0,1-.321-.778,1.059,1.059,0,0,1,.321-.778Z' transform='translate(-346.231 693.769)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: 9px auto;
+}
+.adopt .ctrl_btn button.play {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10.646 12.957'%3E%3Cpath id='play_arrow_FILL0_wght300_GRAD0_opsz24' d='M340-682.058v-10.767a1.03,1.03,0,0,1,.329-.788,1.086,1.086,0,0,1,.766-.307,1.112,1.112,0,0,1,.289.04,1.226,1.226,0,0,1,.289.119l8.475,5.4a1.13,1.13,0,0,1,.374.407,1.1,1.1,0,0,1,.125.517,1.1,1.1,0,0,1-.125.517,1.13,1.13,0,0,1-.374.408l-8.475,5.4a1.228,1.228,0,0,1-.289.119,1.132,1.132,0,0,1-.289.039,1.086,1.086,0,0,1-.766-.308A1.03,1.03,0,0,1,340-682.058ZM341.818-687.442Zm0,4.058,6.383-4.058-6.383-4.058Z' transform='translate(-340.001 693.921)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: 12px auto;
+}
+.adopt .ctrl_btn button.stop {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.689 11.689'%3E%3Cpath id='pause_FILL0_wght300_GRAD0_opsz24' d='M228.318-728.31a1.3,1.3,0,0,1-.95-.4,1.3,1.3,0,0,1-.4-.95v-8.991a1.3,1.3,0,0,1,.4-.95,1.3,1.3,0,0,1,.95-.4h2.023a1.3,1.3,0,0,1,.95.4,1.3,1.3,0,0,1,.4.95v8.991a1.3,1.3,0,0,1-.4.95,1.3,1.3,0,0,1-.95.4Zm-6.968,0a1.3,1.3,0,0,1-.95-.4,1.3,1.3,0,0,1-.4-.95v-8.991a1.3,1.3,0,0,1,.4-.95,1.3,1.3,0,0,1,.95-.4h2.023a1.3,1.3,0,0,1,.95.4,1.3,1.3,0,0,1,.4.95v8.991a1.3,1.3,0,0,1-.4.95,1.3,1.3,0,0,1-.95.4Zm6.968-1.349h2.023v-8.991h-2.023Zm-6.968,0h2.023v-8.991H221.35Zm0-8.991v0Zm6.968,0v0Z' transform='translate(-220.001 739.999)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: 11px auto;
+    display: none;
+}
+.adopt .ctrl_btn .more {
+    padding: 0 64px 0 27px;
+    line-height: 41px;
+    height: 41px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+.adopt .ctrl_btn .more::after {
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    width: 14px;
+    height: 14px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22.05' height='22.05' viewBox='0 0 22.05 22.05'%3E%3Cpath id='add_FILL0_wght200_GRAD0_opsz24' d='M250.106-708.056H240v-1.838h10.106V-720h1.838v10.106H262.05v1.838H251.944v10.106h-1.838Z' transform='translate(-240 720)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+.adopt .ctrl_btn .more:hover {
+    background-color: #0C3B57;
+    border-color: #0C3B57;
+}
+.adopt .ctrl_btn .more:hover::after {
+    transform: rotate(90deg);
+}
+.adopt .move {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    font-size: 120px;
+    color: rgba(255,255,255,0.1);
+    white-space: nowrap;
+    animation: rolling;
+    animation-duration:30s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@media screen and (max-width:1320px) {
+    .msg { 
+        padding-top: 80px;
+    }
+    .adopt .list {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+    .adopt .swiper ul li {
+        width: auto;
+    }
+}
+@media screen and (max-width:1024px) {
+    .msg { 
+        padding-top: 60px;
+    }
+    .adopt h2 {
+        font-size: 30px;
+    }
+    .adopt .ctrl_btn {
+        margin-top: 50px;
+    }
+    .adopt .ctrl_btn button.next,
+    .adopt .ctrl_btn button.prev {
+        display: none;
+    }
+    .adopt .ctrl_btn button.stop,
+    .adopt .ctrl_btn button.play {
+        width: 35px;
+        height: 35px;
+        background-size: 10px auto;
+    }
+    .adopt .ctrl_btn .more {
+        padding: 0 60px 0 15px;
+        line-height: 35px;
+        height: 35px;
+    }
+    .adopt .ctrl_btn .more::after {
+        top: 11px;
+    }
+    .adopt .move {
+        font-size: 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    .msg { 
+        padding-top: 50px;
+    }
+    .adopt h2 {
+        font-size: 25px;
+    }
+    .adopt .move {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:520px) {
+    .msg { 
+        padding-top: 40px;
+    }
+    .adopt h2 {
+        font-size: 20px;
+    }
+    .adopt .move {
+        font-size: 60px;
+    }
+}
+
+.footer {
+    background-color: #2d2d2d;
+    color: rgba(255,255,255,0.8);
+    padding: 80px 0 110px 0;
+}
+
+@keyframes rolling {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50.33%, 0); }
 }
