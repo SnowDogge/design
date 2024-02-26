@@ -279,6 +279,22 @@ html, body {
         height: calc(100vh - 100px);
         overflow-y: auto;
         display: block;
+        padding: 10px 0;
+    }
+    .header .gnb ul.depth2 {
+        display: none;
+        position: relative;
+        left: auto;
+        top: auto;
+        padding: 10px 20px 10px 30px;
+        transform: translate(0, 0);
+        background-color: #f4f4f4;
+    }
+    .header .gnb ul.depth2::before {
+        display: none;
+    }
+    .header .gnb .sub_open ul.depth2 {
+        display: none;
     }
     .header .gnb ul.depth1 > li > a {
         font-size: 20px;
@@ -342,7 +358,17 @@ html, body {
         background-size: 28px auto;
         background-position: center center;
     }
-    .header .tnb .paper {
+    .header.menu_open .tnb .paper {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 111;
+        border: 0;
+        padding: 0 20px 0 0;
+
+    }
+    .header.menu_open .tnb .paper::after {
         display: none;
     }
     .header .tnb {

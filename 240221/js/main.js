@@ -81,4 +81,12 @@ $(document).ready(function(){
         $(this).hide()
         $('.footer .family_site .site_open').show()
     })
+
+    $('.header .gnb .gnb_open').on('click', function(){
+        $('header').addClass('menu_open');
+    })
+    $('.header .gnb .gnb_close').on('click', function(){
+        $('header').removeClass('menu_open');
+    })
+    $('.header .gnb. u.depth2')
 })
