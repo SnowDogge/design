@@ -144,13 +144,16 @@
         padding-top: 20px;
         border-right: 1px solid #ededed;
     }
-    .header .gnb ul.depth1 > li.on > a {
+    .header .gnb ul.depth1 > li.on > a,
+    .header .gnb ul.depth1 > li[data-menu="on"] > a {
         color: #F51919;
     }
-    .header .gnb ul.depth1 > li.on > a > span {
+    .header .gnb ul.depth1 > li.on > a > span,
+    .header .gnb ul.depth1 > li[data-menu="on"] > a > span {
         position: relative; /* after 정렬의 기준 */
     }
-    .header .gnb ul.depth1 > li.on > a > span::after {
+    .header .gnb ul.depth1 > li.on > a > span::after,
+    .header .gnb ul.depth1 > li[data-menu="on"] > a > span::after {
         position: absolute;
         right: -5px;
         top: -2px;
@@ -172,7 +175,8 @@
         position: relative;
     }
     .header .gnb ul.depth2 > li > a:hover span::after,
-    .header .gnb ul.depth2 > li.on > a span::after {
+    .header .gnb ul.depth2 > li.on > a span::after,
+    .header .gnb ul.depth2 > li[data-menu="on"] > a span::after {
         position: absolute;
         right: -5px;
         top: 0;
@@ -660,5 +664,135 @@
     }
     .service .list ul li a strong {
         overflow: auto;
+    }
+}
+
+.sub_visual {
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/common/sub_visual.png);
+    color: #fff;
+}
+.sub_visual.sub1 {
+    background-image: url(../images/common/sub_visual.png);
+}
+.sub_visual .sub_tit {
+    display: block;
+    padding-top: 210px;
+    text-align: center;
+}
+.sub_visual .sub_tit h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.sub_visual .sub_tit p {
+    line-height: 1em;
+    font-size: 25px;
+}
+.sub_visual .sub_tit strong {
+    font-size: 20px;
+}
+
+.lnb {
+    background-color: #F51919;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    left: calc(50% - 640px);
+    top: 420px;
+    width: 1280px;
+}
+.lnb ul {
+    display: flex;
+    justify-content: center;
+}
+.lnb ul li a {
+    display: block;
+    line-height: 40px;
+    padding: 0 24px;
+}
+.lnb ul li.on a,
+.lnb ul li a:hover {
+    background-color: #fff;
+    border-radius: 40px;
+    color: #F51919;
+    font-weight: 700;
+}
+
+.contents {
+    min-height: 200px;
+}
+@media screen and (max-width:1320px){
+    .lnb {
+        border-radius: 0;
+        left: 0;
+        width: 100%;
+    }
+    .sub_visual .sub_tit h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .sub_visual .sub_tit p {
+        line-height: 1em;
+        font-size: 25px;
+    }
+    .sub_visual .sub_tit strong {
+        font-size: 20px;
+    }
+    .sub_visual {
+        height: 440px;
+    }
+}
+@media screen and (max-width:1024px){
+    .sub_visual {
+        height: 400px;
+    }
+    .sub_visual .sub_tit {
+        padding-top: 160px;
+    }
+    .sub_visual .sub_tit h1 {
+        font-size: 30px;
+    }
+    .sub_visual .sub_tit p {
+        font-size: 17px;
+    }
+    .sub_visual .sub_tit strong {
+        font-size: 15px;
+    }
+    .lnb {
+        top: 340px;
+        padding: 0;
+        overflow-x: auto;
+        padding: 0 40px;
+        color: rgba(255,255,255,0.8);
+    }
+    .lnb ul {
+        justify-content: flex-start;
+    }
+    .lnb ul li {
+        margin: 0 10px;
+    }
+    .lnb ul li a {
+        line-height: 60px;
+        position: relative;
+        padding: 0 5px;
+    }
+    .lnb ul li.on a,
+    .lnb ul li a:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+    .lnb ul li.on a::after,
+    .lnb ul li a:hover::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255,255,255,0.8);
+        content: "";
     }
 }
