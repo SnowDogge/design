@@ -353,3 +353,90 @@
         font-size: 15px;
     }
 }
+
+.cts_biz05 {
+    margin: 100px 0;
+}
+.cts_biz05 .search_group .search {
+    max-width: 650px;
+    width: 100%;
+    height: 55px;
+    border: 2px solid #F51919;
+    border-radius: 45px;
+    padding: 0 0 0 80px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;  
+}
+.cts_biz05 .search_group .search:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.cts_biz05 .search_group .search::after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: #F51919;
+    font-size: 35px;
+    font-weight: 700;
+    content: "K";
+}
+.cts_biz05 .search_group .search label {
+    display: none;
+}
+.cts_biz05 .search_group .search input[type=text] {
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    color: #1d1d1d;
+    width: calc(100% - 80px);
+}
+.cts_biz05 .search_group .search input[type=text]::placeholder {
+    font-weight: 400;
+    color: #aaa;
+}
+.cts_biz05 .search_group .search input[type=submit] {
+    border: 0;
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.314' height='20.314' viewBox='0 0 20.314 20.314'%3E%3Cpath id='search-line' d='M18.031,16.617,22.314,20.9,20.9,22.314l-4.283-4.283a9,9,0,1,1,1.414-1.414Zm-2.006-.742a7,7,0,1,0-.15.15Z' transform='translate(-2 -2)' fill='%23b10400'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    margin-left: 30px;
+}
+@media screen and (max-width:768px) { 
+    .cts_biz05 .search_group .search {
+        height: 45px;
+        padding: 0 0 0 70px;
+    }
+    .cts_biz05 .search_group .search::after {
+        top: -5px;
+        left: 25px;
+    }
+    .cts_biz05 .search_group .search input[type=text] {
+        width: calc(100% - 85px);
+    }
+    .cts_biz05 .search_group .search input[type=submit] {
+        background-size: 22px;
+    }
+}
+.cts_biz05 .login_group {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.cts_biz05 .login_group input[type="submit"] {
+    width: 100%;
+    background-color: #F51919;
+    border-radius: 15px;
+    border: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+}
