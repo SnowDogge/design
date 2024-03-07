@@ -731,6 +731,8 @@
         border-radius: 0;
         left: 0;
         width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
     .sub_visual .sub_tit h1 {
         font-size: 40px;
@@ -767,6 +769,7 @@
         top: 340px;
         padding: 0;
         overflow-x: auto;
+        overflow-y: hidden;
         padding: 0 40px;
         color: rgba(255,255,255,0.8);
     }
