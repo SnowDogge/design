@@ -704,6 +704,8 @@
     left: calc(50% - 640px);
     top: 420px;
     width: 1280px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .lnb ul {
     display: flex;
