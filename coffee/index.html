@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
@@ -127,7 +129,7 @@
             </section>
             <section class="product">
                 <div class="wrapper">
-                    <h2>MD’S PICK</h2>
+                    <h2 data-aos="fade-up">MD’S PICK</h2>
                     <div class="list">
                         <div class="swiper">
                             <ul class="swiper-wrapper">
@@ -226,12 +228,12 @@
             </section>
             <section class="brand">
                 <div class="wrapper">
-                    <div class="photo"><img src="images/main/brand_bg.png" alt="커피사진"></div>
+                    <div class="photo" data-aos="fade-left"><img src="images/main/brand_bg.png" alt="커피사진"></div>
                     <div class="inner">
                         <h2>SIGNATURE <br>BLEND</h2>
-                        <p>엄선된 원두로 직접 로스팅한 후, 폴바셋만의 비법으로 블렌딩하여 탄생한 Paul Bassett의 대표원두인 “시그니처 블랜드(Signature Blend)”와 폴 바셋에게 사사받은 오랜 경력의 전문 바리스타 출신 “Coffee Ambassador”의 관리 서비스 프로그램을 제안합니다</p>
+                        <p data-aos="fade-up">엄선된 원두로 직접 로스팅한 후, 폴바셋만의 비법으로 블렌딩하여 탄생한 Paul Bassett의 대표원두인 “시그니처 블랜드(Signature Blend)”와 폴 바셋에게 사사받은 오랜 경력의 전문 바리스타 출신 “Coffee Ambassador”의 관리 서비스 프로그램을 제안합니다</p>
                         <div class="list">
-                            <ul>
+                            <ul data-aos="fade-up">
                                 <li>
                                     <img src="images/main/brand_ico01.png" alt="">
                                     <strong>스페셜티 <br>생두 셀렉션</strong>
@@ -255,8 +257,8 @@
             </section>
             <section class="social">
                 <div class="wrapper">
-                    <h2>취향을 담는 시간<span class="m_skip">, 폴 바셋</span></h2>
-                    <div class="sns">
+                    <h2 data-aos="fade-up">취향을 담는 시간<span class="m_skip">, 폴 바셋</span></h2>
+                    <div class="sns" data-aos="fade-up">
                         <ul>
                             <li><a href="#n">#<span class="m_skip">폴바셋 </span>페이스북</a></li>
                             <li><a href="#n">#<span class="m_skip">폴바셋 </span>인스타그램</a></li>
@@ -382,5 +384,12 @@
             <div class="copyringh">© m’s seed Co., Ltd. All rights reserved.</div>
         </footer>
     </div>
+    <script>
+        AOS.init({
+        offset: 150,
+        duration: 500,
+        easing: 'ease',
+        });
+        </script>
 </body>
 </html>
