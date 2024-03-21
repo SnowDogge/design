@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     function counting (){
         $('.counter').each(function() { // .count-num에 각각 적용
             var $this = $(this),
@@ -18,4 +18,4 @@ $(document).ready(function() {
             });  
         });
     }
-})
+}) */
