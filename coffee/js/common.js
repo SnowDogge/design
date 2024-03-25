@@ -24,7 +24,6 @@ $(document).ready(function(){
         scroll_dir = scroll_prev - scroll_curr
         console.log(scroll_dir)
         if(scroll_curr > 250){
-            $('aside button').attr('style','transform: translate(0, -100px)')
             $('header').addClass('fixed')
             if(scroll_dir > 0){ //위로스크롤 - 나타나야함
                 $('header').attr('style','transform: translate(0, 0)')
@@ -35,7 +34,6 @@ $(document).ready(function(){
                 $('header').removeClass('menu_over')
             }
         }else{
-            $('aside button').attr('style','transform: translate(0, 0)')
             $('header').removeClass('fixed')
             $('header').attr('style','transform: translate(0, 0)')
         }
@@ -105,9 +103,18 @@ $(document).ready(function(){
         $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
     })
 
-    $('aside button').click(function(){
-        $('html, body').animate({scrollTop:0}, 400)
-        return false;
+    // TOP 버튼 눌러서 상단으로 이동
+    $('aside button').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    })
+
+    $('footer .f_nav button.f_nav_open').on('click', function(){
+        $('footer .f_nav').addClass('open')
+    })
+    $('footer .f_nav button.f_nav_close').on('click', function(){
+        $('footer .f_nav').removeClass('open')
     })
 
 })//$(document).ready

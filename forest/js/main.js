@@ -12,23 +12,25 @@ $(document).ready(function(){
 
 		verticalCentered: true, /* 컨텐츠 요소 위아래 가운데 */
 
-        onLeave: function(destination, direction){
-            if(destination.index == 0 && (direction)){
-                counting();
+        scrollOverflow: false,
+
+        onLeave : function (index, destination, direction){
+            if(destination.index == 1 && direction == 'down'){
+                $('.counter').counterUp();
             }
         },
+
 		afterLoad: function(origin, destination, direction, trigger){
 			if((destination.index == 0) || (destination.index == 2)){ /* index가 2면 슬라이드는 세번째 슬라이드입니다. index 수는 0/1/2/3 */
-				console.log('흰색으로 바뀌어라');
                 $('#fp-nav').attr('data-color', '')
                 $('header').removeClass('black')
 			}else{
-                console.log('검은색으로 바뀌어라');
                 $('#fp-nav').attr('data-color', 'black')
+                $('header').addClass('black')
             }
 		},
 
-		responsiveWidth: 762 /* fullpage를 적용시키지 않을 모바일 사이즈 */
+		responsiveWidth: 768 /* fullpage를 적용시키지 않을 모바일 사이즈 */
 	});
 
     const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
@@ -46,7 +48,7 @@ $(document).ready(function(){
             el: '.visual .paging', /* 해당 요소의 class명 */
             clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
             renderBullet: function (index, className) {   /* paging에 특정 코드 넣기 */
-                return '<span class="page' + (index + 1) + ' ' + className + '"><span></span></span>';
+                return '<span class="page' + (index + 1) + ' '+className+'"><span></span></span>';
             },
         },
 
@@ -56,26 +58,21 @@ $(document).ready(function(){
         },
 
     });
-    swiper.autoplay.stop();  /* 일시정지 기능 */
-    swiper.autoplay.start();  /* 재생 기능 */
 
-    function counting (){
-        $('.counter').each(function() {
-            var $this = $(this),
-            countTo = $this.attr('data-end');
-                
-            $({countNum: $this.text()}).animate({
-                countNum: countTo
-                },{
-                    duration: 3000,
-                    easing:'linear',
-                step: function() {
-                    $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                    $this.text(this.countNum);
-                }
-            }); 
-        });
-    }
+    const news_swiper = new Swiper('.news .swiper', { /* 팝업을 감싼는 요소의 class명 */
+        slidesPerView: 4, /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
+        spaceBetween: 48, /* li와 li사이 - 제일 작은 여백 */
+        breakpoints: {
+            640: {  /* 640px 이상이 되면 적용 */
+                spaceBetween: 48, 
+            },
+            1024: {  /* 1024px 이상이 되면 적용 */
+                spaceBetween: 48,
+            },
+        },
+
+        loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
+        
+    });
+    
 })
