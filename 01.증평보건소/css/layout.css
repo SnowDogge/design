@@ -1,7 +1,8 @@
 .header .header_top { height: 50px; display: flex; align-items:center; border-bottom: 1px solid #CCCCCC;}
 .header .header_top .tnb { display: flex; justify-content: flex-end; color: #00559D;}
 .header .header_top .tnb a { display: block; padding-left: 52px;}
-.header .header_bot { height: 100px; width: 100%; display: flex; display: flex; justify-content: space-between; align-items: flex-start; }
-.header .header_bot .logo { margin: 23px 0 27px 0; display: block;}
+.header .header_bot { height: 100px; width: 100%; display: flex; justify-content: space-between; align-items: flex-start; }
+.header .header_bot .logo { margin: 23px 0 27px 0; }
 .header .header_bot .logo a { display: block; width: 174px; height: 50px; font-size: 0; line-height: 0; background: url(../image/common/logo.svg) no-repeat center center / contain;}
-.header .header_bot .gnb_open, .header .gnb_close { display: none; }
+.header .header_bot .gnb .gnb_open, .header .header_bot .gnb .gnb_close { display: none; }
+.header .header_bot .gnb ul.depth1 > li > a { display: block;}
