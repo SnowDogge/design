@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamRegular.woff') format('woff');
+    font-weight:400; 
+    font-style:normal; 
+}
+@font-face {
+    font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamRegular.woff2') format('woff2');
+    font-weight:400; 
+    font-style:normal; 
+}
+@font-face {
+    font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamExtraBold.woff') format('woff'); 
+    font-weight:700;
+    font-style:normal; 
+}
+@font-face {
+    font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamExtraBold.woff2') format('woff2'); 
+    font-weight:700;
+    font-style:normal; 
+}
+
+
+*::selection {
+    background-color: #B10400;
+    color: #1d1d1d;
+}
+*::-moz-selection {
+    background-color: #B10400;
+    color: #1d1d1d;
+}
+
+html, body {
+    font-family: 'Montserrat', 'S-CoreDream', sans-serif;
+    font-size: 15px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.25;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+#wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1320px){
+    .wrapper { 
+        width: auto; 
+        margin: 0 20px;  
+    }
+}
+@media screen and (max-width:768px){
+    html, body {
+        font-size: 13px;
+    }
+}
+
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1000000000000;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #F51919;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.skipnav a[href="#gnb"] {
+    background-color: #1d1d1d;
+}
+.skipnav a:focus {
+    top: 100px;
+}
+
+/*
+    파일명 : common.css
+    작성자 : 양은직
+    작성명 : 2024.02.28
+    설　명 : 홈페이지 전체에 공통으로 적용되는 스타일을 저장
+*/
+
