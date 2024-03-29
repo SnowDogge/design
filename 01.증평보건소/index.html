@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>증평 보건소</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>증평군 보건소</title>
 </head>
 <body>
     <div class="skipnav">
@@ -13,96 +19,223 @@
     </div>
     <div id="wrap" class="main">
         <header class="header">
-                <div class="header_top">
-                    <div class="wrapper">
-                        <div class="tnb">
-                            <a href="#n">통합 로그인</a>
-                            <a href="#n">검색</a>
+            <div class="wrapper">
+                <div class="head_top">
+                    <div class="tnb">
+                        <ul>
+                            <li class="login"><a href="#n">통합 로그인</a></li>
+                            <li class="search"><a href="#n">검색</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="head_sub">
+                    <nav class="gnb">
+                        <h1 class="logo"><a href="index.html">증평 보건소</a></h1>
+                        <button class="gnb_open">메뉴열기</button>
+                        <div class="gnb_wrap">
+                            <ul class="depth1">
+                                <li>
+                                    <a href="#n"><span>보건소 소개</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">인삿말</a></li>
+                                        <li><a href="#n">조직도</a></li>
+                                        <li><a href="#n">업무/전화번호안내</a></li>
+                                        <li><a href="#n">보건행정서비스헌장</a></li>
+                                        <li><a href="#n">찾아오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>진료안내</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">일반진료</a></li>
+                                        <li><a href="#n">한의과진료</a></li>
+                                        <li><a href="#n">물리치료</a></li>
+                                        <li><a href="#n">치과진료</a></li>
+                                        <li><a href="#n">X선 검사안내</a></li>
+                                        <li><a href="#n">골다공증검사</a></li>
+                                        <li><a href="#n">임상병리실</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>민원안내</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">제증명발급</a></li>
+                                        <li><a href="#n">민원서식자료실</a></li>
+                                        <li><a href="#n">의료기관안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>보건사업</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">건강생활실천통합서비스</a></li>
+                                        <li><a href="#n">구강보건</a></li>
+                                        <li><a href="#n">감염병관리</a></li>
+                                        <li><a href="#n">정신건강증진</a></li>
+                                        <li><a href="#n">방문건강관리</a></li>
+                                        <li><a href="#n">치매환자관리</a></li>
+                                        <li><a href="#n">암관리</a></li>
+                                        <li><a href="#n">심뇌혈관질환관리</a></li>
+                                        <li><a href="#n">모자보건</a></li>
+                                        <li><a href="#n">금연클리닉</a></li>
+                                        <li><a href="#n">이동순회진료</a></li>
+                                        <li><a href="#n">재활보조기구대여</a></li>
+                                        <li><a href="#n">희귀질환자의료비지원</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>예방접종</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">어린이 국가예방접종지원사업</a></li>
+                                        <li><a href="#n">보건소 예방접종</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>커뮤니티</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n">공지사항</a></li>
+                                        <li><a href="#n">생활/건강정보</a></li>
+                                        <li><a href="#n">주요행사일정</a></li>
+                                        <li><a href="#n">사진첩</a></li>
+                                        <li><a href="#n">온라인상담</a></li>
+                                        <li><a href="#n">금연 성공자리스트</a></li>
+                                        <li><a href="#n">온라인 자가진단</a></li>
+                                        <li><a href="#n">OH! 증평 OnHealth</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="gnb_close">메뉴닫기</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section class="visual">
+                <div class="wrapper">
+                    <div class="visual_popup">
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="image/main/visual00.jpg" alt="의약품 안전사용 안내">
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="image/main/visual01.jpg" alt="비상진료 병의원 안내">
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="image/main/visual02.jpg" alt="비대면진료 안내">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="visual_side">
+                            <ul>
+                                <li class="visual_side_img"><img src="image/main/visual_side.jpg"></li>
+                                <li class="visual_side_text">
+                                    <ul class="inner">
+                                        <li>진료시간 안내</li>
+                                        <li><span>평일 09:00~18:00</span></li>
+                                        <ul class="inner_sub1">
+                                            <li>점심시간 12:00~13:00</li>
+                                            <li>매주 토·일 공휴일 휴무</li>
+                                        </ul>
+                                        <li class="inner_bg">2024년 1월 1일부터<br>보건소 선별진료소 운영이 종료됩니다.</li>
+                                        <ul class="inner_sub2">
+                                            <li><a href="https://ncov.kdca.go.kr" target="_blank" title="새창링크">질병관리처 코로나19 안내</a></li>
+                                            <li><a href="https://cheongju.go.kr/DATA/download/www/sw_annae_24.pdf" target="_blank" title="새창링크">코로나19 진단검사지원 안내문</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="header_bot">
-                    <div class="wrapper">
-                        <h1 class="logo"><a href="#n">증평 보건소</a></h1>
-                        <nav class="gnb" id="gnb">
-                            <button class="gnb_open">메뉴열기</button>
-                            <div class="gnb_wrap">
-                                <ul class="depth1">
-                                    <li>
-                                        <a href="#n"><span>보건소 소개</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>인삿말</span></a></li>
-                                            <li><a href="#n"><span>조직도</span></a></li>
-                                            <li><a href="#n"><span>업무/전화번호안내</span></a></li>
-                                            <li><a href="#n"><span>보건행정서비스헌장</span></a></li>
-                                            <li><a href="#n"><span>찾아오시는길</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#n"><span>진료안내</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>일반진료</span></a></li>
-                                            <li><a href="#n"><span>한의과진료</span></a></li>
-                                            <li><a href="#n"><span>물리치료</span></a></li>
-                                            <li><a href="#n"><span>치과진료</span></a></li>
-                                            <li><a href="#n"><span>X선 검사안내</span></a></li>
-                                            <li><a href="#n"><span>골다공증검사</span></a></li>
-                                            <li><a href="#n"><span>임상병리실</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#n"><span>민원안내</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>제증명발급</span></a></li>
-                                            <li><a href="#n"><span>민원서식자료실</span></a></li>
-                                            <li><a href="#n"><span>의료기관안내</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#n"><span>보건사업</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>건강생활실천통합서비스</span></a></li>
-                                            <li><a href="#n"><span>구강보건</span></a></li>
-                                            <li><a href="#n"><span>감염병관리</span></a></li>
-                                            <li><a href="#n"><span>정신건강증진</span></a></li>
-                                            <li><a href="#n"><span>방문건강관리</span></a></li>
-                                            <li><a href="#n"><span>치매환자관리</span></a></li>
-                                            <li><a href="#n"><span>암관리</span></a></li>
-                                            <li><a href="#n"><span>심혈관질환관리</span></a></li>
-                                            <li><a href="#n"><span>모자보건</span></a></li>
-                                            <li><a href="#n"><span>금연클리닉</span></a></li>
-                                            <li><a href="#n"><span>이동순회진료</span></a></li>
-                                            <li><a href="#n"><span>재활보조기구대여</span></a></li>
-                                            <li><a href="#n"><span>희귀질환자의료비지원</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#n"><span>예방접종</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>어린이 국가예방접종 지원사업</span></a></li>
-                                            <li><a href="#n"><span>보건소 예방접종</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#n"><span>커뮤니티</span></a>
-                                        <ul class="depth2">
-                                            <li><a href="#n"><span>공지사항</span></a></li>
-                                            <li><a href="#n"><span>생활/건강정보</span></a></li>
-                                            <li><a href="#n"><span>주요행사일정</span></a></li>
-                                            <li><a href="#n"><span>사진첩</span></a></li>
-                                            <li><a href="#n"><span>온라인상담</span></a></li>
-                                            <li><a href="#n"><span>금연 성공자리스트</span></a></li>
-                                            <li><a href="#n"><span>온라인 자가진단</span></a></li>
-                                            <li><a href="#n"><span>OH! 증평 OnHealth</span></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <button class="gnb_close">메뉴닫기</button>
-                        </nav>
+            </section>
+            <section class="qmenu">
+                <div class="wrapper">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon0.svg" alt="진료안내">
+                                    <strong>진료안내</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon1.svg" alt="제증명서발급">
+                                    <strong>제증명서발급</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon2.svg" alt="예방접종">
+                                    <strong>예방접종</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon3.svg" alt="모자보건">
+                                    <strong>모자보건</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon4.svg" alt="방문건강관리">
+                                    <strong>방문건강관리</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <img src="image/main/icon5.svg" alt="의료기관안내">
+                                    <strong>의료기관안내</strong>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-        </header>
+            </section>
+            <section class="social">
+                <div class="wrapper">
+                    <div class="inner">
+                        <h2>공지사항</h2>
+                        <div class="anno">
+                            <ul>
+                                <li>
+                                    <div class="date"><span>2024-03</span><strong>20</strong></div>
+                                    <a href="#n"><p>건강한 임신·출산·육아를 위한 정보 제공 사이트 안내</p></a>
+                                </li>
+                                <li>
+                                    <div class="date"><span>2024-03</span><strong>07</strong></div>
+                                    <a href="#n"><p>영유아 모발 니코틴검사자 모집 안내</p></a>
+                                </li>
+                                <li>
+                                    <div class="date"><span>2024-03</span><strong>05</strong></div>
+                                    <a href="#n"><p>2024년 지역사회건강조사 조사원 모집공고</p></a>
+                                </li>
+                                <li>
+                                    <div class="date"><span>2024-02</span><strong>27</strong></div>
+                                    <a href="#n"><p>생명과 지역을 살리는 필수의료 정책 패키지 안내</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebutton">
+                            <ul>
+                                <li class="btn0"><a href="#n">예방접종 안내</a></li>
+                                <li class="btn1"><a href="#n">금연 클리닉</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service">
+                
+            </section>
+        </div>
     </div>
 </body>
 </html>

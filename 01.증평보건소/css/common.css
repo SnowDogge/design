@@ -15,6 +15,18 @@
 }
 @font-face {
     font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamBold.woff') format('woff'); 
+    font-weight:500;
+    font-style:normal; 
+}
+@font-face {
+    font-family:'S-CoreDream';
+    src:url('../fonts/SCoreDreamBold.woff2') format('woff2'); 
+    font-weight:500;
+    font-style:normal; 
+}
+@font-face {
+    font-family:'S-CoreDream';
     src:url('../fonts/SCoreDreamExtraBold.woff') format('woff'); 
     font-weight:700;
     font-style:normal; 
