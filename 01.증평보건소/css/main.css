@@ -18,6 +18,7 @@
 .visual .visual_side .inner .inner_bg { display: block; width: 278px; height: 73px; margin: 28px 0 10px 0; padding: 16px 0 0 15px; border-radius: 20px; font-weight: 700; background-color: #06599F; }
 .visual .visual_side .inner ul { display: block; margin-left: 15px; }
 .visual .visual_side .inner ul > li { position: relative; }
+.visual .visual_side .inner .call { display: block; margin-top: 10px; }
 .visual .visual_side .inner ul > li::before { position: absolute; content: ""; }
 .visual .visual_side .inner .inner_sub1 > li { margin-top: 2px;}
 .visual .visual_side .inner .inner_sub1 > li::before { top: 6px; left: -8px; background-color: #fff; width: 3px; height: 3px; border-radius: 100%; }
