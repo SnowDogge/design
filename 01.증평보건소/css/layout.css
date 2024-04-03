@@ -106,3 +106,7 @@ footer .footer_bot ul span { color: #00559D; }
     footer .footer_top .f_link ul { bottom:32px; line-height: 40px; width: 150px; }
     footer .footer_bot ul { flex-wrap: wrap; }
 }
+
+@media screen and (max-width:640px){
+    .header { height: 50px; }
+}
