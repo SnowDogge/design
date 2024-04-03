@@ -3,6 +3,7 @@
 @import url(layout.css);
 
 .container { margin-top: 150px;}
+.container .bright { display: none; position: fixed; margin-top: 150px; height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10; }
 .visual { margin-top: -150px; width: 100%; height: 850px; padding: 195px 0 49px 0; background-color: #90B1DD; }
 .visual h2 { font-size: 0; line-height: 0; }
 .visual .visual_popup { display: flex; height: 510px; }
@@ -26,7 +27,6 @@
 .visual .visual_side .inner .inner_sub2 > li { margin-top: 4px;}
 .visual .visual_side .inner .inner_sub2 > li::before { top: 0; left: -22px; width: 16px; height: 16px; background-position: center center; background-repeat: no-repeat; background-size: contain; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath id='open_in_new_FILL0_wght500_GRAD0_opsz24' d='M113.847-832.131a1.906,1.906,0,0,1-1.4-.578,1.906,1.906,0,0,1-.578-1.4v-12.045a1.906,1.906,0,0,1,.578-1.4,1.906,1.906,0,0,1,1.4-.578h6.022v1.978h-6.022v12.045h12.045v-6.022h1.978v6.022a1.906,1.906,0,0,1-.578,1.4,1.906,1.906,0,0,1-1.4.578Zm4.184-4.784-1.378-1.378,7.861-7.861h-2.906v-1.978h6.261v6.262h-1.978v-2.906Z' transform='translate(-111.869 848.131)' fill='%23fff'/%3E%3C/svg%3E%0A"); }
 
-
 .qmenu h2 { font-size: 0; line-height: 0; }
 .qmenu .inner ul { display: flex; margin-top: -95px; justify-content: space-between; align-items: center; width: 100%; height: 225px; border: 1px solid #ccc; background-color: #fff;}
 .qmenu .inner ul li { position: relative; width: 16.66%; text-align: center; }
@@ -49,12 +49,17 @@
 .social .inner .anno ul li .date span { font-size: 12px; line-height: 12px;}
 .social .inner .anno ul li .date strong { display: block; font-size: 35px; font-weight: 700; margin-top: -8px; }
 .social .inner .anno ul li a { position: relative; display: block; width: 100%; }
-.social .inner .anno ul li P { padding-left: 20px; line-height: 80px;  }
+.social .inner .anno ul li P { padding-left: 20px; line-height: 80px; }
 .social .inner .anno ul li p::after { position: absolute; top:37px; left:12px; height: 2px; width: 2px; border-radius: 100%; background-color: #aaa; content: ""; }
 .social .inner .sidebutton { margin-left: 28px; }
-.social .inner .sidebutton ul li { width: 408px; height: 148px; border: 1px solid #ccc; border-radius: 20px; font-size: 0; line-height: 0; background-position: center center; background-repeat: no-repeat; background-size: cover; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05); }
-.social .inner .sidebutton ul .btn0 { background-image: url(../image/main/sidebutton0.png); margin-bottom: 28px; }
-.social .inner .sidebutton ul .btn1 { background-image: url(../image/main/sidebutton1.png); }
+.social .inner .sidebutton ul li { position: relative; width: 408px; height: 148px; padding: 20px 0 0 20px; border: 1px solid #ccc; border-radius: 20px; background-position: center center; background-repeat: no-repeat; background-size: cover; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05); }
+.social .inner .sidebutton ul li span { font-size: 20px; font-weight: 700; margin-top: 1px; display: block; }
+.social .inner .sidebutton ul .btn0 { background-image: url(../image/main/sidebg0.png); margin-bottom: 28px; }
+.social .inner .sidebutton ul .btn1 { background-image: url(../image/main/sidebg1.png); }
+.social .inner .sidebutton ul li::after { position: absolute; top: calc(50% - 50px); right:18px; width: 120px; height: 120px; background-position: center center; background-repeat: no-repeat; background-size: contain; content: ""; }
+.social .inner .sidebutton ul .btn0::after { background-image: url(../image/main/sideicon0.png); }
+.social .inner .sidebutton ul .btn1::after { background-image: url(../image/main/sideicon1.png); }
+.social .inner .sidebutton ul li strong { display: block; margin-top: 30px; height: 31px; width: 91px; padding: 7px 0 0 17px; border-radius: 10px; background-color: #06599F; color: #fff; }
 .social .inner .sidebutton ul li a { display: block; height: 100%; width: 100%; }
 
 .service { padding: 37px 0 51px 0; background-color: rgba(226, 235, 250, 0.5);}
@@ -71,7 +76,8 @@
 .service .inner ul li span { font-size: 20px; font-weight: 700; }
 .service .inner ul li img { margin-top: 22px; border-radius: 100%; align-content: center; }
 .service .inner ul li, .service .inner .serach { box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05); }
-.service .inner .serach { border: 1px solid #CCCCCC; padding: 26px 0 60px 0; border-radius: 15px; width: 100%; height: 250px; text-align: center; background: url(../image/main/search_bg.png) no-repeat center center;} 
+.service .inner .serach { border: 1px solid #CCCCCC; padding: 26px 0 60px 0; border-radius: 15px; width: 100%; height: 250px; text-align: center; background-color: #D6E3F5;}
+/* .service .inner .serach { border: 1px solid #CCCCCC; padding: 26px 0 60px 0; border-radius: 15px; width: 100%; height: 250px; text-align: center; background: url(../image/main/search_bg.png) no-repeat center center / cover;} */
 .service .inner .serach strong, .service .inner .serach span { font-size: 20px; font-weight: 700; }
 .service .inner .serach span { color: #206AA9; }
 .service .inner .serach .serach_inner { display: block; margin-top: 55px; margin-left: 24px; background-color: #fff; width: calc(100% - 48px); height: 55px; border-radius: 40px; }
@@ -83,5 +89,88 @@
 .service .inner .serach .serach_inner input[type=submit] { position: relative; background-color: #9DBFEC; width: 55px; height: 55px; border: 0; font-size: 0; border-radius: 100%; cursor: pointer; background-position: center center; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36.293' height='36.293' viewBox='0 0 36.293 36.293'%3E%3Cg id='그룹_377' data-name='그룹 377' transform='translate(13273.293 1463.293)'%3E%3Crect id='사각형_280' data-name='사각형 280' width='35' height='35' transform='translate(-13272 -1462)' fill='none'/%3E%3Cg id='그룹_376' data-name='그룹 376' transform='translate(-15650.586 -1339.549) rotate(-45)'%3E%3Cg id='타원_16' data-name='타원 16' transform='translate(1757 1605)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='5'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5' stroke='none'/%3E%3Ccircle cx='11.5' cy='11.5' r='9' fill='none'/%3E%3C/g%3E%3Cline id='선_12' data-name='선 12' y1='7.655' transform='translate(1768.5 1627.5)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");}
 
 @media screen and (max-width:1240px){
-    
+    .container { margin-top: 100px;}
+    .visual { height: 610px; margin-top: 100px; padding-top: 20px; }
+
+    .visual .swiper { width: calc(100% - 320px); height: auto; }
+    .visual .visual_side { width: 320px; }
+    .visual .visual_side img { width: 320px; }
+    .visual .visual_side .inner { margin-left: 18px; }
+
+    .social { margin: 30px 0 45px 0;}
+    .social .inner .info h2 { margin-bottom: 15px; }
+    .social .inner { justify-content: space-between; flex-wrap: wrap; }
+    .social .inner .info { display: flex; justify-content: space-between; width: 100%; }
+    .social .inner .info .more { position: relative; display: flex; margin-right: 15px; }
+    .social .inner .info .more a { width: auto; height: auto; }
+    .social .inner .anno { width: calc(100% - 430px); }
+
+    .qmenu .inner ul { margin-top: -50px; }
+
+    .social .inner .anno ul li p {  white-space: nowrap; overflow: hidden; text-overflow: clip; }
+    .social .inner .anno ul li a { width: calc(100% - 70px); }
+    .social .inner .sidebutton { width: auto; margin: 0; }
+
+    .service { margin: 30px 0 45px 0;}
+    .service .inner { display: block; }
+    .service .inner ul { flex-wrap: wrap; height: 100%; }
+    .service .inner ul li { width: calc(50% - 7px); margin: 14px 0 0 0; }
+    .service .inner .serach {  display: block; margin-top: 20px; height: 160px; width: 100%; }
+    .service .inner .serach .serach_inner { margin-top: 10px; }
+}
+@media screen and (max-width:960px){
+
+    .container { margin-top: 0;}
+    .visual { position: relative; display: block; height: auto; margin-top: 100px; padding-top: 0; padding-bottom: 20px; }    
+    .visual .btn_ctrl button { width: 60px; height: 60px; background-size: 20px;}
+    .visual .swiper img { width: 100%; }
+    .visual .visual_popup { display: block; height: auto; }
+    .visual .swiper { width: 100%; display: block; margin-top: 20px; }
+    .visual .visual_side { position: relative; display: block; width: 100%; height: auto; margin-top: 15px; padding-bottom: 10px; }
+    .visual .visual_side .visual_side_img { display: none;}
+    .visual .visual_side .visual_side_text { width: auto; margin-top: 15;}
+    .visual .visual_side .inner { height: 100%; display: flex; margin:0 0 20px 0; padding: 20px 0 0 20px; }
+    .visual .visual_side .inner div { width: 50%; }
+    .visual .visual_side .inner .inner_bg { margin-top: 0;}
+
+    .qmenu .inner ul { display: flex; margin-top: 20px; }
+
+    .social .inner .anno { width: 100%; margin-bottom: 20px; }
+    .social .inner .sidebutton { width: 100%; margin: 0; }
+    .social .inner .sidebutton ul .btn0 { margin-bottom: 14px; }
+    .social .inner .sidebutton ul { display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .social .inner .sidebutton ul li { background-position: left center; width: 50%; min-width: 100% }
+
+    .qmenu .inner ul { height: 150px; }
+    .qmenu .inner ul li strong { margin-top: 15px; font-size: 15px; }
+    .qmenu .inner ul li::after { bottom: 5px; height: 100px;}
+}
+@media screen and (max-width:640px){
+    .visual .btn_ctrl button { display: none; }
+    .visual .visual_side { display: block; }
+    .visual .visual_side .inner { display: block; }
+    .visual .visual_side .inner span { font-size: 18px;}
+    .visual .visual_side .inner div { width: auto; }
+    .visual .visual_side .inner .inner_bg { margin-top: 5px; height: 57px; width: 235px; padding: 10px 0 0 10px;}
+    .qmenu .inner ul { flex-wrap: wrap; height: auto; }
+    .qmenu .inner ul li { width: 33%; margin: 15px 0 15px 0; }
+    .qmenu .inner ul li::after { display: none; }
+
+    .social { margin: 35px 0 30px 0;}
+    .social .inner .sidebutton ul li { height: 120px; }
+    .social .inner .info h2 { font-size: 20px;}
+    .social .inner .anno ul li .date { width: 60px; padding-top: 8px; }
+    .social .inner .anno ul li .date strong { margin-top: 0; font-size: 20px; }
+    .social .inner .anno ul li P { line-height: 60px; }
+    .social .inner .anno ul li p::after { top: 28px; }
+    .social .inner .sidebutton ul li::after { width: 80px; height: 80px; top: calc(50% - 30px);}
+    .social .inner .sidebutton ul li strong { margin-top: 10px; }
+
+    .service { padding: 15px 0 20px 0; }
+    .service h2 { font-size: 20px; }
+    .service .inner { margin-top: 15px;}
+    .service .inner ul li a { padding-top: 15px; }
+    .service .inner ul li span { font-size: 15px;}
+    .service .inner ul li { height: 190px;}
+    .service .inner ul li img { height: 100px; margin-top: 15px;}
 }
