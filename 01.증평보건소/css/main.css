@@ -90,7 +90,7 @@
 
 @media screen and (max-width:1240px){
     .container { margin-top: 100px;}
-    .container .bright { margin-top: 100px; }
+    .container .bright { margin-top: 0; }
     .visual { height: 610px; margin-top: 100px; padding-top: 20px; }
 
     .visual .swiper { width: calc(100% - 320px); height: auto; }
@@ -122,7 +122,7 @@
 @media screen and (max-width:960px){
     .container { margin-top: 0;}
     .container .bright { margin-top: 0; }
-    .visual { position: relative; display: block; height: auto; margin-top: 100px; padding-top: 0; padding-bottom: 20px; }    
+    .visual { position: relative; display: block; height: auto; margin-top: 50px; padding-top: 0; padding-bottom: 20px; }    
     .visual .btn_ctrl button { width: 60px; height: 60px; background-size: 20px;}
     .visual .swiper img { width: 100%; }
     .visual .visual_popup { display: block; height: auto; }
@@ -147,7 +147,6 @@
     .qmenu .inner ul li::after { bottom: 5px; height: 100px;}
 }
 @media screen and (max-width:640px){
-    .visual { margin-top: 50px; }
     .visual .btn_ctrl button { display: none; }
     .visual .visual_side { display: block; }
     .visual .visual_side .inner { display: block; }
