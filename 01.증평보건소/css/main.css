@@ -116,7 +116,7 @@
     .service .inner { display: block; }
     .service .inner ul { flex-wrap: wrap; height: 100%; }
     .service .inner ul li { width: calc(50% - 7px); margin: 14px 0 0 0; }
-    .service .inner .serach {  display: block; margin-top: 20px; height: 160px; width: 100%; }
+    .service .inner .serach { display: block; margin-top: 20px; height: 160px; width: 100%; }
     .service .inner .serach .serach_inner { margin-top: 10px; }
 }
 @media screen and (max-width:960px){
@@ -147,6 +147,7 @@
     .qmenu .inner ul li::after { bottom: 5px; height: 100px;}
 }
 @media screen and (max-width:640px){
+    .visual { margin-top: 50px; }
     .visual .btn_ctrl button { display: none; }
     .visual .visual_side { display: block; }
     .visual .visual_side .inner { display: block; }
@@ -156,22 +157,32 @@
     .qmenu .inner ul { flex-wrap: wrap; height: auto; }
     .qmenu .inner ul li { width: 33%; margin: 15px 0 15px 0; }
     .qmenu .inner ul li::after { display: none; }
+    .qmenu .inner ul li strong { font-size: 14px; }
+    .qmenu .inner ul li img { width: 40px; height: 40px; }
 
     .social { margin: 35px 0 30px 0;}
-    .social .inner .sidebutton ul li { height: 120px; }
+    .social .inner .sidebutton ul .btn0 { margin-bottom: 14px;}
     .social .inner .info h2 { font-size: 20px;}
+    .social .inner .sidebutton ul li { height: 110px; }
     .social .inner .anno ul li .date { width: 60px; padding-top: 8px; }
     .social .inner .anno ul li .date strong { margin-top: 0; font-size: 20px; }
     .social .inner .anno ul li P { line-height: 60px; }
     .social .inner .anno ul li p::after { top: 28px; }
     .social .inner .sidebutton ul li::after { width: 80px; height: 80px; top: calc(50% - 30px);}
-    .social .inner .sidebutton ul li strong { margin-top: 10px; }
+    .social .inner .sidebutton ul li strong { font-size: 14px; margin-top: 10px; height: 26px; width: 81px; padding: 5px 0 0 12px; }
+    .social .inner .sidebutton ul li span { font-size: 15px; font-size: 15px; }
 
     .service { padding: 15px 0 20px 0; }
     .service h2 { font-size: 20px; }
     .service .inner { margin-top: 15px;}
+    .service .inner ul li { height: auto;}
     .service .inner ul li a { padding-top: 15px; }
-    .service .inner ul li span { font-size: 15px;}
-    .service .inner ul li { height: 190px;}
-    .service .inner ul li img { height: 100px; margin-top: 15px;}
+    .service .inner ul li span { font-size: 15px; }
+    .service .inner ul li img { height: 80px; margin-top: 15px; }
+
+    .service .inner .serach { font-size: 13px; border: 1px solid #CCCCCC; padding: 15px 0 0 0; border-radius: 15px; width: 100%; height: 125px;}
+    .service .inner .serach strong, .service .inner .serach span { font-size: 15px; }
+    .service .inner .serach .serach_inner { margin-top: 15px; height: 40px;}
+    .service .inner .serach .serach_inner input[type=text] { width: calc(100% - 65px); }
+    .service .inner .serach .serach_inner input[type=submit] { background-color: #9DBFEC; width: 40px; height: 40px;}
 }
