@@ -16,7 +16,7 @@
 .visual .visual_side { display: block; width: 370px; background-color: #206AA9; }
 .visual .visual_side .inner { color: #fff; margin: 26px 0 0 47px;}
 .visual .visual_side .inner span { display: block; margin: 5px 0 4px 0; font-size: 25px; font-weight: 700;}
-.visual .visual_side .inner .inner_bg { display: block; width: 278px; height: 73px; margin: 18px 0 10px 0; padding: 16px 0 0 15px; border-radius: 20px; font-weight: 700; background-color: #06599F; }
+.visual .visual_side .inner .inner_bg { display: block; width: 278px; height: auto; margin: 18px  10px 0; padding: 16px 0 0 15px; border-radius: 20px; font-weight: 700; background-color: #06599F; }
 .visual .visual_side .inner ul { display: block; margin-left: 15px; }
 .visual .visual_side .inner ul > li { position: relative; }
 .visual .visual_side .inner .call { display: block; margin-top: 10px; }
@@ -117,7 +117,7 @@
     .service .inner ul { flex-wrap: wrap; height: 100%; }
     .service .inner ul li { width: calc(50% - 7px); margin: 14px 0 0 0; }
     .service .inner .serach { display: block; margin-top: 20px; height: 160px; width: 100%; }
-    .service .inner .serach .serach_inner { margin-top: 10px; }
+    .service .inner .serach .serach_inner { margin-top: 10px; margin-left: 50%; transform: translate(-50%, 0); max-width: 640px; }
 }
 @media screen and (max-width:960px){
     .container { margin-top: 0;}
@@ -132,7 +132,7 @@
     .visual .visual_side .visual_side_text { width: auto; margin-top: 15;}
     .visual .visual_side .inner { height: 100%; display: flex; margin:0 0 20px 0; padding: 20px 0 0 20px; }
     .visual .visual_side .inner div { width: 50%; }
-    .visual .visual_side .inner .inner_bg { margin-top: 0;}
+    .visual .visual_side .inner .inner_bg { margin: 0 0 10px 0; padding: 10px 0 10px 15px;}
 
     .qmenu .inner ul { display: flex; margin-top: 20px; }
 
@@ -153,7 +153,7 @@
     .visual .visual_side .inner { display: block; }
     .visual .visual_side .inner span { font-size: 18px;}
     .visual .visual_side .inner div { width: auto; }
-    .visual .visual_side .inner .inner_bg { margin-top: 5px; height: 57px; width: 235px; padding: 10px 0 0 10px;}
+    .visual .visual_side .inner .inner_bg { margin-top: 5px; width: 235px; padding: 10px 0 10px 10px;}
     .qmenu .inner ul { flex-wrap: wrap; height: auto; }
     .qmenu .inner ul li { width: 33%; margin: 15px 0 15px 0; }
     .qmenu .inner ul li::after { display: none; }

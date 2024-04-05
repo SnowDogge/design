@@ -96,10 +96,7 @@ footer .footer_bot ul span { color: #00559D; }
 }
 
 @media screen and (max-width:960px){
-    .header .head_sub .gnb .depth1 > li > a { font-size: 15px; line-height: 50px; }
-    .header .head_sub .gnb .depth1 > li > a::after { position: absolute; right: 0; bottom: 0; width: 50px; height: 50px;background-size: 15px;}
-    .header .head_sub .gnb .depth2 { padding-bottom: 15px; }
-    .header .head_sub .gnb .depth2 > li > a { font-size: 13px; padding-left: 35px; }
+    
     footer { font-size: 13px; }
     footer { margin: 15px 0 30px 0;}
     footer .footer_top .f_nav { position: relative; }
@@ -119,6 +116,12 @@ footer .footer_bot ul span { color: #00559D; }
     .header .logo a { width: 100px; height: 50px; }
     .header .gnb .gnb_open, .header .gnb .gnb_close { width: 50px; height: 50px; background-size: 25px; }
     .header .gnb { height: 50px; }
+
+    .header .head_sub .gnb .depth1 > li > a { font-size: 15px; line-height: 50px; }
+    .header .head_sub .gnb .depth1 > li > a::after { position: absolute; right: 0; bottom: 0; width: 50px; height: 50px;background-size: 15px;}
+    .header .head_sub .gnb .depth2 { padding-bottom: 15px; }
+    .header .head_sub .gnb .depth2 > li > a { font-size: 13px; padding-left: 35px; }
+    
     footer .footer_top .f_nav .f_inner .f_logo img { width: 80px; height: 40px; }
     footer .footer_top .f_link { top: 4px;}
     footer .footer_top .f_link button { line-height: 28px; width: 150px; height: 28px; }
