@@ -1,0 +1,69 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+@mixin fontremove() {
+    font-size: 0; line-height: 0;
+}
+@mixin flex_sb(){
+    display: flex;
+    justify-content: space-between;
+}
+@mixin buttonshadow(){
+    box-shadow: 0 3px 5px rgba($color: #000000, $alpha: 0.05);
+}
+
+$bg1:#F8F8F8;
+
+.container {
+    margin-top: 75px;
+}
+.visual {
+    background-color: $bg1;
+    h2 {
+        @include fontremove();
+    }
+    .inner {
+        @include flex_sb();
+        margin: 41px 0 50px 0;
+        .qmenu {
+            width: 384px;
+            margin-left: 96px;
+            .menutop, .menubot {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                ul {
+                    display: flex;
+                    margin-top: 15px;
+                    flex-wrap: wrap;
+                    li {
+                        width: 33%;
+                        a {
+                            display: block;
+                            height: 100px;
+                            width: 110px;
+                            border-radius: 20px;
+                            @include buttonshadow();
+                            text-align: center;
+                            margin-bottom: 28px;
+                            background-color: #fff;
+                            padding-top: 13px;
+                            img {
+                                display: block;
+                                margin: 0 0 5px 33px;
+                                height: 44px;
+                                width: 44px;
+                            }
+                        }
+                    }
+                }
+            }
+            .menubot { 
+                margin-top: 14px;
+            }
+        }
+        
+    }
+}

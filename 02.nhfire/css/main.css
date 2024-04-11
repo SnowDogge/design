@@ -1,0 +1,55 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+.container {
+  margin-top: 75px;
+}
+
+.visual {
+  background-color: #F8F8F8;
+}
+.visual h2 {
+  font-size: 0;
+  line-height: 0;
+}
+.visual .inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 0 50px 0;
+}
+.visual .inner .qmenu {
+  width: 384px;
+  margin-left: 96px;
+}
+.visual .inner .qmenu .menutop h3, .visual .inner .qmenu .menubot h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.visual .inner .qmenu .menutop ul, .visual .inner .qmenu .menubot ul {
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.visual .inner .qmenu .menutop ul li, .visual .inner .qmenu .menubot ul li {
+  width: 33%;
+}
+.visual .inner .qmenu .menutop ul li a, .visual .inner .qmenu .menubot ul li a {
+  display: block;
+  height: 100px;
+  width: 110px;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 28px;
+  background-color: #fff;
+  padding-top: 13px;
+}
+.visual .inner .qmenu .menutop ul li a img, .visual .inner .qmenu .menubot ul li a img {
+  display: block;
+  margin: 0 0 5px 33px;
+  height: 44px;
+  width: 44px;
+}
+.visual .inner .qmenu .menubot {
+  margin-top: 14px;
+}/*# sourceMappingURL=main.css.map */
