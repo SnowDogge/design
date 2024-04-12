@@ -7,6 +7,10 @@ $(document).ready(function(){
             disableOnInteraction: true,
         },
         loop: true,
+        pagination: { 
+            el: '.visual .pagination',
+            clickable: true, 
+        },
         navigation: {
             nextEl: '.visual .next',
             prevEl: '.visual .prev',  
