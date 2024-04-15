@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
     <title>보험에 마음을 더합니다 | NH농협손해보험</title>
 </head>
 <body>
@@ -26,21 +27,39 @@
                         <div class="gnb_wrap">
                             <ul class="depth1">
                                 <li>
-                                    <a href="#n"><span>전체상품</span></a>
+                                    <a href="#n"><span>보험상품</span></a>
                                     <ul class="depth2">
-                                        <li><a href="#n"><span></span></a></li>
+                                        <li><a href="#n"><span>건강</span></a></li>
+                                        <li><a href="#n"><span>상해</span></a></li>
+                                        <li><a href="#n"><span>통합·실손</span></a></li>
+                                        <li><a href="#n"><span>화재·재물</span></a></li>
+                                        <li><a href="#n"><span>사업자</span></a></li>
+                                        <li><a href="#n"><span>암</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n"><span>대출상품</span></a>
+                                    <ul class="depth2">
+                                        <li><a href="#n"><span>보험계약대출</span></a></li>
+                                        <li><a href="#n"><span>담보대출</span></a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#n"><span>고객센터</span></a>
                                     <ul class="depth2">
-                                        <li><a href="#n"><span></span></a></li>
+                                        <li><a href="#n"><span>고객상담신청</span></a></li>
+                                        <li><a href="#n"><span>전자민원접수</span></a></li>
+                                        <li><a href="#n"><span>자주묻는질문</span></a></li>
+                                        <li><a href="#n"><span>서류양식안내</span></a></li>
+                                        <li><a href="#n"><span>지점안내</span></a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#n"><span>공지사항</span></a>
                                     <ul class="depth2">
-                                        <li><a href="#n"><span></span></a></li>
+                                        <li><a href="#n"><span>새소식</span></a></li>
+                                        <li><a href="#n"><span>입찰공고</span></a></li>
+                                        <li><a href="#n"><span>이벤트</span></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -119,7 +138,7 @@
                                     <div class="info_box">
                                         <div class="box1">
                                             <div class="birth_box">
-                                                <label for="birth">생년월일</label>
+                                                <label for="birth_input">생년월일</label>
                                                 <input type="text" id="birth_input" placeholder="생년월일">
                                             </div>
                                             <div class="gender_box">
@@ -131,11 +150,11 @@
                                         </div>
                                         <div class="box2">
                                             <div class="name_box">
-                                                <label for="name">이름</label>
+                                                <label for="name_input">이름</label>
                                                 <input type="text" id="name_input" placeholder="이름">
                                             </div>
                                             <div class="phone_box">
-                                                <label for="phone">전화번호</label>
+                                                <label for="phone_input">전화번호</label>
                                                 <input type="text" id="phone_input" placeholder="전화번호">
                                             </div>
                                         </div>
@@ -175,10 +194,93 @@
                     </div>
                 </div>
             </section>
-            <section class="social"></section>
-            <section class="service"></section>
+            <section class="social">
+                <div class="wrapper">
+                    <div class="social_inner">
+                        <div class="anno_left">
+                            <h2>새소식</h2>
+                            <a href="#n"><strong>더보기+</strong></a>
+                            <ul>
+                                <li><a href="#n">2024년도 상반기 NH농협손해보험 신규직원 채용(6급...<span>2024-04-04</span></a></li>
+                                <li><a href="#n">금융결제원 바이오인증-Samsung Pass 홍채 서비...<span>2024-03-01</span></a></li>
+                                <li><a href="#n">비대면 보험계약대출 일시중단 안내<span>2023-12-15</span></a></li>
+                                <li><a href="#n">숨은 금융자산 찾아주기 캠페인<span>2023-11-13</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="anno_right">
+                            <h2>입찰공고</h2>
+                            <a href="#n"><strong>더보기+</strong></a>
+                            <ul>
+                                <li><a href="#n">NH농협손해보험 2024년 전자금융기반시설 취약점 분석...<span>2024-03-19</span></a></li>
+                                <li><a href="#n">2023년 농작물재해보험 정부시책 우수 농축협 해외연수...<span>2024-03-18</span></a></li>
+                                <li><a href="#n">농협손해보험 헤아림 인증패 제작/공급 대행업체 선정<span>2024-02-26</span</a></li>
+                                <li><a href="#n">농작물재해보험 인쇄물·리본의 제작 및 공급 대행업체 선...<span>2024-02-02</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service">
+                <div class="wrapper">
+                    <div class="service_inner">
+                        <ul>
+                            <li><a href="#n" class="sev1"><strong>보험금 간단청구</strong>점수부터 보험금 수령까지<br>소액 통원의료비 청구가 간편해졌어요!<span>바로가기</span></a></li>
+                            <li><a href="#n" class="sev2"><strong>가입상담신청</strong>설계 목적별 맞춤 상담신청<br>전화도 OK! 방문도 OK!<span>바로가기</span></a></li>
+                            <li><a href="#n" class="sev3"><strong>농협손해보험 다이렉트</strong>보험가입,<br>쉽고 편리하게<span>바로가기</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="f_top">
+                    <div class="f_nav">
+                        <ul>
+                            <li class="privacy"><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">이용약관</a></li>
+                            <li><a href="#n">윤리경영클린신고센터</a></li>
+                            <li><a href="#n">보호금융상품등록부</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_link">
+                        <button class="open" title="열기">Family Site</button>
+                            <ul>
+                                <li class="link01"><a href="#n"><span>NH농협금융지주</span></a></li>
+                                <li class="link02"><a href="#n"><span>NH농협은행</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH농협생명</span></a></li>
+                                <li class="link02"><a href="#n"><span>NH농협손해보험</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH투자증권</span></a></li>
+                                <li class="link02"><a href="#n"><span>NH농협-Amundi자산운용</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH농협캐피탈</span></a></li>
+                                <li class="link02"><a href="#n"><span>NH선물</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH저축은행</span></a></li>
+                                <li class="link02"><a href="#n"><span>NH리츠운용</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH벤처투자</span></a></li>
+                                <li class="link03"><a href="#n"><span>NH헤지자산운용</span></a></li>
+                            </ul>
+                            <button class="close" title="닫기">Family Site</button>
+                    </div>
+                </div>
+                <div class="f_bot">
+                    <div class="f_inner">
+                        <ul>
+                            <li>대표이사 서국동</li>
+                            <li>사업자등록번호 104-86-39719</li>
+                        </ul>
+                        <ul>
+                            <li>(03740)서울시 서대문구 충정로 60 농협손해보험주식회사</li>
+                        </ul>
+                        <ul>
+                            <li>Copyright 2017 by NongHyup Property & Casualty Insurance Co., Ltd. All rights reserved.</li>
+                        </ul>
+                    </div>
+                    <div class="f_call">
+                        <p>다이렉트 가입문의<strong>1644-9000</strong></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
