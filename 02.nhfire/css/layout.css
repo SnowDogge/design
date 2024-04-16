@@ -11,6 +11,7 @@
 }
 .header::before {
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -19,6 +20,12 @@
   width: 100%;
   content: "";
   z-index: -1;
+}
+.header.menu_over::before {
+  display: block;
+}
+.header.menu_over .inner .depth2 {
+  display: block;
 }
 .header::after {
   position: absolute;
@@ -75,19 +82,43 @@
   font-weight: 700;
   color: #0B7CC2;
 }
+.header .inner .depth1 > li:hover > a::after, .header .inner .depth1 > li.on > a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 1px;
+  background-color: #D7EDFC;
+  content: "";
+}
 .header .inner .depth2 {
   position: relative;
-  display: block;
+  display: none;
   padding-top: 15px;
 }
 .header .inner .depth2 > li > a {
   display: block;
+  position: relative;
   line-height: 40px;
   color: #5d5d5d;
+}
+.header .inner .depth2 > li > a::after {
+  position: absolute;
+  bottom: 5px;
+  left: 74px;
+  width: 0;
+  height: 1px;
+  background-color: #0B7CC2;
+  transition: transform 0.4s;
+  content: "";
 }
 .header .inner .depth2 > li > a:hover {
   color: #0B7CC2;
   font-weight: 700;
+}
+.header .inner .depth2 > li > a:hover::after {
+  width: 2px;
+  transform: scaleX(50);
 }
 .header .inner .depth2::before {
   position: absolute;

@@ -83,17 +83,17 @@
                             <ul class="swiper-wrapper"> 
                                 <li class="swiper-slide">
                                     <a href="#n">
-                                        <img src="images/main/visual00.png" alt="의약품 안전사용 안내">
+                                        <img src="images/main/visual00.png" alt="스크린골프장 홀인원보험">
                                     </a>
                                 </li>
                                 <li class="swiper-slide">
                                     <a href="#n">
-                                        <img src="images/main/visual01.png" alt="비상진료 병의원 안내">
+                                        <img src="images/main/visual01.png" alt="레저상해보험">
                                     </a>
                                 </li>
                                 <li class="swiper-slide">
                                     <a href="#n">
-                                        <img src="images/main/visual02.png" alt="비대면진료 안내">
+                                        <img src="images/main/visual02.png" alt="다이렉트 운전자 보험">
                                     </a>
                                 </li>
                             </ul>
@@ -132,14 +132,15 @@
                         <div class="inner_search">
                             <h2>내게 맞는 보험은?</h2>
                             <p>생년월일을 입력하고<br>비슷한 연령대가 가입한 보험을 확인하세요!</p>
-                            <from>
+                            <form id="form">
                                 <fieldset>
                                     <legend>개인정보입력</legend>
                                     <div class="info_box">
                                         <div class="box1">
                                             <div class="birth_box">
                                                 <label for="birth_input">생년월일</label>
-                                                <input type="text" id="birth_input" placeholder="생년월일">
+                                                <input type="text" id="birth_input" placeholder="생년월일 (예:19901201)">
+                                                <p class="alert">올바른 생년월일을 입력해 주세요.</p>
                                             </div>
                                             <div class="gender_box">
                                                 <input type="radio" id="gender_M" name="user_gender" checked>
@@ -152,34 +153,43 @@
                                             <div class="name_box">
                                                 <label for="name_input">이름</label>
                                                 <input type="text" id="name_input" placeholder="이름">
+                                                <p class="alert">올바른 이름을 입력해 주세요.</p>
                                             </div>
                                             <div class="phone_box">
                                                 <label for="phone_input">전화번호</label>
                                                 <input type="text" id="phone_input" placeholder="전화번호">
+                                                <p class="alert">올바른 전화번호를 입력해 주세요.</p>
                                             </div>
                                         </div>
                                         <div class="box3">
                                             <div class="agree_box">
                                                 <input type="checkbox" id="check1">
                                                 <label for="check1">개인정보 수집 동의</label>
-                                                <p>[필수] 보험료 확인 및 보험상품 안내를<br>위한 개인정보 수집·이용 동의</p>
+                                                <p>[선택] 보험료 확인 및 보험상품 안내를<br>위한 개인정보 수집·이용 동의</p>
                                             </div>
-                                            <button>확인하기</button>
+                                            <button class="submit">확인하기</button>
                                         </div>
                                         <a class="call" href="#n">바로문의<strong>1644-9000</strong></a>
                                     </div>
                                 </fieldset>
-                            </from>
+                            </form>
                         </div>
                         <div class="inner_result">
                             <div class="result">
                                 <ul>
-                                    <li><a href="#n"><span class="type1">건강</span><strong>NH다이렉트종합보험2404</strong># 갱신형 · 다이렉트</a></li>
-                                    <li><a href="#n"><span class="type1">건강</span><strong>NH3대진단비플러스보험</strong># 3대 질병 보장</a></li>
-                                    <li><a href="#n"><span class="type2">암</span><strong>NH다이렉트암보험2404</strong># 5중 보장 · 갱신형 담보</a></li>
-                                    <li><a href="#n"><span class="type3">화재·재물</span><strong>주택화재보험</strong># 이웃집 재물 손해 보장</a></li>
-                                    <li><a href="#n"><span class="type4">사업자</span><strong>재난배상책임보험</strong># 재난 취약시설 의무가입</a></li>
-                                    <li><a href="#n"><span class="type5">상해</span><strong>안심케어 실손의료비보험</strong># 갱신형 · 무배당</a></li>
+                                    <li class="item11"><a href="#n"><span class="type1">건강</span><strong>NH다이렉트종합보험</strong>#진단,입원,수술까지 보장!</a></li>
+                                    <li class="item12"><a href="#n"><span class="type1">건강</span><strong>NH3대진단비플러스보험</strong>#암, 심장, 뇌혈관 집중 보장</a></li>
+                                    <li class="item13"><a href="#n"><span class="type1">건강</span><strong>NH굳스타트 건강보험</strong>#태아부터 100세까지 튼튼하게</a></li>
+                                    <li class="item14"><a href="#n"><span class="type1">건강</span><strong>NH가성비굳 건강보험</strong>#가성비를 갖춘 합리적 선택</a></li>
+                                    <li class="item15"><a href="#n"><span class="type1">건강</span><strong>NH더간편해진치매플러스</strong>#경증부터 든든하게</a></li>
+                                    <li class="item16"><a href="#n"><span class="type1">건강</span><strong>NH베스트간병보험</strong>#장기요양, 간병 특화상품</a></li>
+                                    <li class="item21"><a href="#n"><span class="type2">암</span><strong>NH다이렉트암보험</strong>#진단 시 부터 든든하게!</a></li>
+                                    <li class="item31"><a href="#n"><span class="type3">화재·재물</span><strong>주택화재보험</strong>#화재사고에 대한 실속 보장</a></li>
+                                    <li class="item32"><a href="#n"><span class="type3">화재·재물</span><strong>리치하우스가정종합보험</strong>#화재와 배상책임을 하나로</a></li>
+                                    <li class="item41"><a href="#n"><span class="type5">상해</span><strong>NH다이렉트운전자보험</strong>#12대 중과실 및 중상해사고 보장</a></li>
+                                    <li class="item42"><a href="#n"><span class="type5">상해</span><strong>NH운전자상해보험</strong>#다양한 운전자 위험 보장</a></li>
+                                    <li class="item51"><a href="#n"><span class="type4">사업자</span><strong>재난배상책임보험</strong>#재난 취약시설 가입 의무화</a></li>
+                                    <li class="item52"><a href="#n"><span class="type4">사업자</span><strong>화재배상책임보험</strong>#다중이용업소 필수가입 의무보험</a></li>
                                 </ul>
                             </div>
                             <strong>이런 보험들은 어떤가요?</strong>

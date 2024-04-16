@@ -140,6 +140,12 @@
 .search .inner .inner_search .box1, .search .inner .inner_search .box2, .search .inner .inner_search .box3 {
   display: flex;
 }
+.search .inner .inner_search .box1 .alert, .search .inner .inner_search .box2 .alert, .search .inner .inner_search .box3 .alert {
+  color: #DD0000;
+  font-size: 12px;
+  margin: 2px 0 0 10px;
+  display: none;
+}
 .search .inner .inner_search .box1 {
   margin-top: 20px;
 }
@@ -316,7 +322,6 @@
 }
 .search .inner .inner_result ul {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .search .inner .inner_result ul a {
@@ -367,6 +372,9 @@
   display: block;
   margin: 8px 0 2px 0;
   font-size: 15px;
+}
+.search .inner .inner_result .result a {
+  display: none;
 }
 .search .inner .inner_result strong {
   display: block;

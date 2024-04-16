@@ -171,6 +171,12 @@ $bg2:#F0F0F0;
             }
             .box1,.box2,.box3 {
                 display: flex;
+                .alert { 
+                    color: #DD0000;
+                    font-size: 12px;
+                    margin: 2px 0 0 10px;
+                    display: none;
+                }
             }
             .box1 {
                 margin-top: 20px;
@@ -338,11 +344,10 @@ $bg2:#F0F0F0;
         }
         .inner_result {
             .result {
-                height: 224px;
-                
+                height: 224px; 
             }
             ul {
-                @include flex_sb();
+                display: flex;
                 flex-wrap: wrap;
                 a {
                     @include buttonshadow();
@@ -393,6 +398,9 @@ $bg2:#F0F0F0;
                         font-size: 15px;
                     }
                 }
+            }
+            .result a { 
+                display: none;
             }
             strong {
                 display: block;
