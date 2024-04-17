@@ -47,7 +47,7 @@ $(document).ready(function(){
     function datechk(data){
         var dataval = $(data).val();
         if(!$.isNumeric($(data).val()) || dataval.length < 8){
-            $(data).val("");
+            //$(data).val("");
             $(data).focus();
             $(data).attr('style','border-color: #DD0000;');
             $('.box1 .alert').attr('style','display:block');
@@ -63,7 +63,7 @@ $(document).ready(function(){
 	    var replaceNotInt = /[^0-9]/gi;
         
         if($(data).val().match(replaceId) || !$(data).val()){
-            $(data).val("");
+            //$(data).val("");
             $(data).focus();
             $(data).attr('style','border-color: #DD0000;');
             $('.name_box .alert').attr('style','display:block');
@@ -76,7 +76,7 @@ $(document).ready(function(){
     function numchk(data){
         var dataval = $(data).val();
         if(!$.isNumeric($(data).val()) || dataval.length < 11){
-            $(data).val("");
+            //$(data).val("");
             $(data).focus();
             $(data).attr('style','border-color: #DD0000;');
             $('.phone_box .alert').attr('style','display:block');
