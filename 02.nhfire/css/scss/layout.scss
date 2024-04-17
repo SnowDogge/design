@@ -216,13 +216,18 @@
                 }
             }
             ul {
+                transform: translate(0.5s);
                 position: absolute;
-                display: none;
+                //display: none;
                 background-color: #fff;
                 border-radius: 15px;
-                padding: 15px 0 15px 0;
+                padding: 0;
+                overflow: hidden;
+                height: 0;
                 bottom: 37px;
                 right: 0;
+                transition: height 1s;
+                
                 a {
                     padding-left: 13px;
                     display: block;
@@ -241,7 +246,9 @@
                 display: block;
             }
             ul {
-                display: block;
+                height: 450px;
+                padding: 15px 0 15px 0;
+                //display: block;
                 li:hover{
                     color: #0B7CC2;
                 }
