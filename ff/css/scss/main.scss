@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url(default.css);
+@import url(common.css);
+
+@mixin flex1() {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin absolute_set() {
+    position: absolute;
+    content: "";
+}
+@mixin absolutetl() {
+    @include absolute_set($val1, $val2);
+    top: $val1;
+    left: $val2;
+}
+@mixin absolutebl() {
+    @include absolute_set();
+    bottom: 0;
+    left: 0;
+}
+
+$black1 : #1d1d1d;
+$black2 : #3d3d3d;
+$black3 : #9d9d9d;
+$black4 : #F8F8F8;
+$black5 : #707070;
+$font1 : 400;
+$font2 : 800;
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    padding-top: 40px;
+    .inner {
+        @include flex1;
+        .gnb {
+            text-align: center;
+            display: block;
+            width: 100%;
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    position: relative;
+                    margin-left: 52px;
+                    font-size: 20px;
+                    font-weight: 200;
+                    &::after {
+                        opacity: 0;
+                        @include absolutebl();
+                        width: 100%;
+                        height: 1px;
+                        background-color: $black2;
+                        bottom: -10px;
+                        transition: 0.3s;
+                    }
+                    &.on::after {
+                        opacity: 1;
+                        @include absolutebl();
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        .logo {
+            @include flex1();
+            font-size: 20px;
+            p {
+                display: block;
+                font-weight: 200;
+            }
+            span {
+                position: relative;
+                margin-left: 10px;
+                display: block;
+                font-weight: 700;
+                &::after {
+                    @include absolute_set;
+                    top: 2px;
+                    left: -5px;
+                    width: 1px;
+                    height: 20px;
+                    background-color: $black3;
+                }
+            }
+        }
+    }
+}
+.visual {
+    position: relative;
+    min-height: 850px;
+    .inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .tit {
+        width: 100%;
+        margin-top: 250px;
+        p {
+            display: block;
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 80px;
+            font-weight: $font2;
+            span {
+                font-weight: $font1;
+            }
+        }
+    }
+    .subtit {
+        margin-bottom: 100px;
+        width: 100%;
+        p {
+            font-size: 30px;
+        }
+    }
+    .sub {
+        width: 100%;
+        height: auto;
+        ul {
+            @include flex1();
+            align-items: flex-end;
+            .sub_hash {
+                color: $black5;
+            }
+            .sub_cnt {
+                span {
+                    display: block;
+                    font-size: 25px;
+                    font-weight: $font2;
+                    margin-bottom: 10px;
+                }
+                em {
+                    display: block;
+                    font-size: 20px;
+                    font-weight: $font2;
+                    margin-top: 10px;
+                }
+                p {
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.about {
+    margin-top: 850px;
+    background-color: $black4;
+    min-height: 820px;
+    width: 100%;
+    .inner {
+        float: right;
+        padding: 200px 0 0 90px;
+        background-color: #fff;
+        max-width: 1184px;
+        width: 100%;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: $font2;
+    }
+    .top {
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            li {
+                min-width: 300px;
+                p {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &::after {
+            @include absolute_set();
+            bottom: -55px;
+            left: 0;
+            width: 800px;
+            height: 1px;
+            background-color: #707070;
+        }
+    }
+    .bot {
+        display: block;
+        margin-top: 104px;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            li {
+                min-width: 300px;
+                h2 {
+                    font-size: 20px;
+                    font-weight: $font2;
+                    margin-bottom: 19px;
+                }
+                span {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 10px;
+                }
+                strong {
+                    display: block;
+                    width: 50px;
+                    font-weight: $font2;
+                }
+            }
+        }
+    }
+}
