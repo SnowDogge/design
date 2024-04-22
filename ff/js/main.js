@@ -30,7 +30,7 @@ $(document).ready(function(){
     })
     $('.gnb .gnb2').on('click', function(){
         $('html, body').animate({
-            scrollTop: 950
+            scrollTop: 850
         }, 500)
     })
     $('.gnb .gnb3').on('click', function(){
