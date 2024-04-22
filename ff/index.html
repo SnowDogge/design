@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
     <title>집에 가고 싶다..</title>
 </head>
 <body>
@@ -18,9 +20,9 @@
                 <div class="inner">
                     <nav class="gnb">
                         <ul>
-                            <li><a href="#n"><span>Main</span></a></li>
-                            <li><a href="#n"><span>About</span></a></li>
-                            <li><a href="#n"><span>Project</span></a></li>
+                            <li class="gnb1 on"><a href="#n"><span>Main</span></a></li>
+                            <li class="gnb2"><a href="#n"><span>About</span></a></li>
+                            <li class="gnb3"><a href="#n"><span>Project</span></a></li>
                         </ul>
                     </nav>
                     <nav class="logo">
@@ -35,7 +37,7 @@
                     <div class="inner">
                         <div class="tit">
                             <p>코딩하는게 즐거운</p>
-                            <h2>양은직<span>입니다.</span></h2>
+                            <h2>양은직<span>입니다<em>.</em></span></h2>
                         </div>
                         <div class="subtit">
                             <p>디자인이라는 캔버스 위에 코드를 그리는것이 즐거운,<br>
@@ -61,40 +63,101 @@
             </section>
             <section class="about">
                 <div class="inner">
-                    <h2>양은직<br>Yang Eun-Jick</h2>
+                    <div class="wrapper">
+                        <h2>양은직<br>Yang Eun-Jick</h2>
+                    </div>
                     <div class="top">
-                        <ul>
-                            <li>
-                                <p>1997.02.27.</p>
-                                <p>+82 10-6321-1796</p>
-                                <p>Snowdoge97@gmail.com</p>
-                            </li>
-                            <li>
-                                <p>HTML</p>
-                                <p>CSS(SCSS)</p>
-                                <p>JS / jQuery</p>
-                            </li>
-                        </ul>
+                        <div class="wrapper">
+                            <ul>
+                                <li>
+                                    <p>1997.02.27.</p>
+                                    <p>+82 10-6321-1796</p>
+                                    <p>Snowdoge97@gmail.com</p>
+                                </li>
+                                <li class="skill">
+                                    <span><p>HTML</p><strong class="skillbar1"></strong></span>
+                                    <span><p>CSS(SCSS)</p><strong class="skillbar2"></strong></span>
+                                    <span><p>JS / jQuery</p><strong class="skillbar3"></strong></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="bot">
-                        <ul>
-                            <li>
-                                <h2>EDUCATION</h2>
-                                <span><strong>2016.</strong><p>청주외국어고등학교 졸업</p></span>
-                                <span><strong>2016~<br>2020.</strong><p>우송정보대학교<br>컴퓨터 정보</p></span>
-                            </li>
-                            <li>
-                                <h2>EXPERIENCE</h2>
-                                <span class="item"><strong>2017.</strong><p>Blizzard Entertainment 외부 기술지원</p></span>
-                                <span class="item"><strong>2018~2019.</strong><p>StyleBook<br>취업연계과정 S/W 개발</p></span>
-                                <span class="item"><strong>2024.</strong><p>홍익그룹 배너 광고디자인</p></span>
-                            </li>
-                        </ul>
+                        <div class="wrapper">
+                            <ul>
+                                <li>
+                                    <h2>EDUCATION</h2>
+                                    <span><strong>2016.</strong><p>청주외국어고등학교 졸업</p></span>
+                                    <span><strong>2016~<br>2020.</strong><p>우송정보대학교<br>컴퓨터 정보과</p></span>
+                                </li>
+                                <li>
+                                    <h2>EXPERIENCE</h2>
+                                    <span class="item"><strong>2017.</strong><p>Blizzard Entertainment 외부 기술지원</p></span>
+                                    <span class="item"><strong>2018~<br>2019.</strong><p>StyleBook<br>취업연계과정 S/W 개발</p></span>
+                                    <span class="item"><strong>2024.</strong><p>홍익그룹 배너 광고디자인</p></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
+            <section class="page">
+                <div class="inner">
+                    <div class="text">
+                        <h2>PROJECTs</h2>
+                        <p>이 친구는 <strong>이런 것</strong>들을 만들었어요</p>
+                    </div>
+                    <a href="" class="content">
+                        <ul class="depth1">
+                            <li>
+                                <ul class="depth2">
+                                    <li class="top"><strong>Website<br>in Service</strong><span>2018</span></li>
+                                    <li class="bot"><strong>홍명</strong><p>간호학원</p></li>
+                                </ul>
+                            </li>
+                            <li class="img1">
+                                <p>홍명간호학원 사이트 이미지</p>
+                                <strong>모바일 사이트 이미지</strong>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="" class="content">
+                        <ul class="depth1">
+                            <li class="img2">
+                                <p>증평군보건소 사이트 이미지</p>
+                                <strong>모바일 사이트 이미지</strong>
+                            </li>
+                            <li>
+                                <ul class="depth2">
+                                    <li class="top"><strong>Design<br>&nbsp;&nbsp;Website<em>&</em></strong><span>2024</span></li>
+                                    <li class="bot"><strong>증평군</strong><p>보건소</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="" class="content last">
+                        <ul class="depth1">
+                            <li>
+                                <ul class="depth2">
+                                    <li class="top"><strong>Design<br>&nbsp;&nbsp;Website<em>&</em></strong><span>2024</span></li>
+                                    <li class="bot"><strong>NH</strong><p>농협손해보험</p></li>
+                                </ul>
+                            </li>
+                            <li class="img3">
+                                <p>NH농협손해보험 사이트 이미지</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </section>
         </div>
-        <footer>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="f_inner">
+                    <p>Made by <em>Yang eun-jick</em></p>
+                    <p>Snowdoge97@gmail.com</p>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
